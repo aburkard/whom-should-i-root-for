@@ -1,0 +1,2559 @@
+{
+  "gender": "W",
+  "season": 2026,
+  "teams": [
+    {
+      "id": 3101,
+      "name": "Abilene Chr"
+    },
+    {
+      "id": 3102,
+      "name": "Air Force"
+    },
+    {
+      "id": 3103,
+      "name": "Akron"
+    },
+    {
+      "id": 3104,
+      "name": "Alabama"
+    },
+    {
+      "id": 3105,
+      "name": "Alabama A&M"
+    },
+    {
+      "id": 3106,
+      "name": "Alabama St"
+    },
+    {
+      "id": 3107,
+      "name": "SUNY Albany"
+    },
+    {
+      "id": 3108,
+      "name": "Alcorn St"
+    },
+    {
+      "id": 3109,
+      "name": "Alliant Intl"
+    },
+    {
+      "id": 3110,
+      "name": "American Univ"
+    },
+    {
+      "id": 3111,
+      "name": "Appalachian St"
+    },
+    {
+      "id": 3112,
+      "name": "Arizona"
+    },
+    {
+      "id": 3113,
+      "name": "Arizona St"
+    },
+    {
+      "id": 3114,
+      "name": "Ark Little Rock"
+    },
+    {
+      "id": 3115,
+      "name": "Ark Pine Bluff"
+    },
+    {
+      "id": 3116,
+      "name": "Arkansas"
+    },
+    {
+      "id": 3117,
+      "name": "Arkansas St"
+    },
+    {
+      "id": 3118,
+      "name": "Armstrong St"
+    },
+    {
+      "id": 3119,
+      "name": "Army"
+    },
+    {
+      "id": 3120,
+      "name": "Auburn"
+    },
+    {
+      "id": 3121,
+      "name": "Augusta"
+    },
+    {
+      "id": 3122,
+      "name": "Austin Peay"
+    },
+    {
+      "id": 3123,
+      "name": "Ball St"
+    },
+    {
+      "id": 3124,
+      "name": "Baylor"
+    },
+    {
+      "id": 3125,
+      "name": "Belmont"
+    },
+    {
+      "id": 3126,
+      "name": "Bethune-Cookman"
+    },
+    {
+      "id": 3127,
+      "name": "Binghamton"
+    },
+    {
+      "id": 3128,
+      "name": "Birmingham So"
+    },
+    {
+      "id": 3129,
+      "name": "Boise St"
+    },
+    {
+      "id": 3130,
+      "name": "Boston College"
+    },
+    {
+      "id": 3131,
+      "name": "Boston Univ"
+    },
+    {
+      "id": 3132,
+      "name": "Bowling Green"
+    },
+    {
+      "id": 3133,
+      "name": "Bradley"
+    },
+    {
+      "id": 3134,
+      "name": "Brooklyn"
+    },
+    {
+      "id": 3135,
+      "name": "Brown"
+    },
+    {
+      "id": 3136,
+      "name": "Bryant"
+    },
+    {
+      "id": 3137,
+      "name": "Bucknell"
+    },
+    {
+      "id": 3138,
+      "name": "Buffalo"
+    },
+    {
+      "id": 3139,
+      "name": "Butler"
+    },
+    {
+      "id": 3140,
+      "name": "BYU"
+    },
+    {
+      "id": 3141,
+      "name": "C Michigan"
+    },
+    {
+      "id": 3142,
+      "name": "Cal Poly"
+    },
+    {
+      "id": 3143,
+      "name": "California"
+    },
+    {
+      "id": 3144,
+      "name": "Campbell"
+    },
+    {
+      "id": 3145,
+      "name": "Canisius"
+    },
+    {
+      "id": 3146,
+      "name": "Cent Arkansas"
+    },
+    {
+      "id": 3147,
+      "name": "Centenary"
+    },
+    {
+      "id": 3148,
+      "name": "Central Conn"
+    },
+    {
+      "id": 3149,
+      "name": "Charleston So"
+    },
+    {
+      "id": 3150,
+      "name": "Charlotte"
+    },
+    {
+      "id": 3151,
+      "name": "Chattanooga"
+    },
+    {
+      "id": 3152,
+      "name": "Chicago St"
+    },
+    {
+      "id": 3153,
+      "name": "Cincinnati"
+    },
+    {
+      "id": 3155,
+      "name": "Clemson"
+    },
+    {
+      "id": 3156,
+      "name": "Cleveland St"
+    },
+    {
+      "id": 3157,
+      "name": "Coastal Car"
+    },
+    {
+      "id": 3158,
+      "name": "Col Charleston"
+    },
+    {
+      "id": 3159,
+      "name": "Colgate"
+    },
+    {
+      "id": 3160,
+      "name": "Colorado"
+    },
+    {
+      "id": 3161,
+      "name": "Colorado St"
+    },
+    {
+      "id": 3162,
+      "name": "Columbia"
+    },
+    {
+      "id": 3163,
+      "name": "Connecticut"
+    },
+    {
+      "id": 3164,
+      "name": "Coppin St"
+    },
+    {
+      "id": 3165,
+      "name": "Cornell"
+    },
+    {
+      "id": 3166,
+      "name": "Creighton"
+    },
+    {
+      "id": 3167,
+      "name": "CS Bakersfield"
+    },
+    {
+      "id": 3168,
+      "name": "CS Fullerton"
+    },
+    {
+      "id": 3169,
+      "name": "CS Northridge"
+    },
+    {
+      "id": 3170,
+      "name": "CS Sacramento"
+    },
+    {
+      "id": 3171,
+      "name": "Dartmouth"
+    },
+    {
+      "id": 3172,
+      "name": "Davidson"
+    },
+    {
+      "id": 3173,
+      "name": "Dayton"
+    },
+    {
+      "id": 3174,
+      "name": "Delaware"
+    },
+    {
+      "id": 3175,
+      "name": "Delaware St"
+    },
+    {
+      "id": 3176,
+      "name": "Denver"
+    },
+    {
+      "id": 3177,
+      "name": "DePaul"
+    },
+    {
+      "id": 3178,
+      "name": "Detroit"
+    },
+    {
+      "id": 3179,
+      "name": "Drake"
+    },
+    {
+      "id": 3180,
+      "name": "Drexel"
+    },
+    {
+      "id": 3181,
+      "name": "Duke"
+    },
+    {
+      "id": 3182,
+      "name": "Duquesne"
+    },
+    {
+      "id": 3183,
+      "name": "E Illinois"
+    },
+    {
+      "id": 3184,
+      "name": "E Kentucky"
+    },
+    {
+      "id": 3185,
+      "name": "E Michigan"
+    },
+    {
+      "id": 3186,
+      "name": "E Washington"
+    },
+    {
+      "id": 3187,
+      "name": "East Carolina"
+    },
+    {
+      "id": 3188,
+      "name": "SIUE"
+    },
+    {
+      "id": 3189,
+      "name": "Elon"
+    },
+    {
+      "id": 3190,
+      "name": "ETSU"
+    },
+    {
+      "id": 3191,
+      "name": "Evansville"
+    },
+    {
+      "id": 3192,
+      "name": "F Dickinson"
+    },
+    {
+      "id": 3193,
+      "name": "Fairfield"
+    },
+    {
+      "id": 3194,
+      "name": "FL Atlantic"
+    },
+    {
+      "id": 3195,
+      "name": "FGCU"
+    },
+    {
+      "id": 3196,
+      "name": "Florida"
+    },
+    {
+      "id": 3197,
+      "name": "Florida A&M"
+    },
+    {
+      "id": 3198,
+      "name": "Florida Intl"
+    },
+    {
+      "id": 3199,
+      "name": "Florida St"
+    },
+    {
+      "id": 3200,
+      "name": "Fordham"
+    },
+    {
+      "id": 3201,
+      "name": "Fresno St"
+    },
+    {
+      "id": 3202,
+      "name": "Furman"
+    },
+    {
+      "id": 3203,
+      "name": "G Washington"
+    },
+    {
+      "id": 3204,
+      "name": "Ga Southern"
+    },
+    {
+      "id": 3205,
+      "name": "Gardner Webb"
+    },
+    {
+      "id": 3206,
+      "name": "George Mason"
+    },
+    {
+      "id": 3207,
+      "name": "Georgetown"
+    },
+    {
+      "id": 3208,
+      "name": "Georgia"
+    },
+    {
+      "id": 3209,
+      "name": "Georgia St"
+    },
+    {
+      "id": 3210,
+      "name": "Georgia Tech"
+    },
+    {
+      "id": 3211,
+      "name": "Gonzaga"
+    },
+    {
+      "id": 3212,
+      "name": "Grambling"
+    },
+    {
+      "id": 3213,
+      "name": "Grand Canyon"
+    },
+    {
+      "id": 3214,
+      "name": "Hampton"
+    },
+    {
+      "id": 3215,
+      "name": "Hardin-Simmons"
+    },
+    {
+      "id": 3216,
+      "name": "Hartford"
+    },
+    {
+      "id": 3217,
+      "name": "Harvard"
+    },
+    {
+      "id": 3218,
+      "name": "Hawaii"
+    },
+    {
+      "id": 3219,
+      "name": "High Point"
+    },
+    {
+      "id": 3220,
+      "name": "Hofstra"
+    },
+    {
+      "id": 3221,
+      "name": "Holy Cross"
+    },
+    {
+      "id": 3222,
+      "name": "Houston"
+    },
+    {
+      "id": 3223,
+      "name": "Houston Chr"
+    },
+    {
+      "id": 3224,
+      "name": "Howard"
+    },
+    {
+      "id": 3225,
+      "name": "Idaho"
+    },
+    {
+      "id": 3226,
+      "name": "Idaho St"
+    },
+    {
+      "id": 3227,
+      "name": "IL Chicago"
+    },
+    {
+      "id": 3228,
+      "name": "Illinois"
+    },
+    {
+      "id": 3229,
+      "name": "Illinois St"
+    },
+    {
+      "id": 3230,
+      "name": "Incarnate Word"
+    },
+    {
+      "id": 3231,
+      "name": "Indiana"
+    },
+    {
+      "id": 3232,
+      "name": "Indiana St"
+    },
+    {
+      "id": 3233,
+      "name": "Iona"
+    },
+    {
+      "id": 3234,
+      "name": "Iowa"
+    },
+    {
+      "id": 3235,
+      "name": "Iowa St"
+    },
+    {
+      "id": 3236,
+      "name": "PFW"
+    },
+    {
+      "id": 3237,
+      "name": "IUPUI"
+    },
+    {
+      "id": 3238,
+      "name": "Jackson St"
+    },
+    {
+      "id": 3239,
+      "name": "Jacksonville"
+    },
+    {
+      "id": 3240,
+      "name": "Jacksonville St"
+    },
+    {
+      "id": 3241,
+      "name": "James Madison"
+    },
+    {
+      "id": 3242,
+      "name": "Kansas"
+    },
+    {
+      "id": 3243,
+      "name": "Kansas St"
+    },
+    {
+      "id": 3244,
+      "name": "Kennesaw"
+    },
+    {
+      "id": 3245,
+      "name": "Kent"
+    },
+    {
+      "id": 3246,
+      "name": "Kentucky"
+    },
+    {
+      "id": 3247,
+      "name": "La Salle"
+    },
+    {
+      "id": 3248,
+      "name": "Lafayette"
+    },
+    {
+      "id": 3249,
+      "name": "Lamar"
+    },
+    {
+      "id": 3250,
+      "name": "Lehigh"
+    },
+    {
+      "id": 3251,
+      "name": "Liberty"
+    },
+    {
+      "id": 3252,
+      "name": "Lipscomb"
+    },
+    {
+      "id": 3253,
+      "name": "Long Beach St"
+    },
+    {
+      "id": 3254,
+      "name": "LIU Brooklyn"
+    },
+    {
+      "id": 3255,
+      "name": "Longwood"
+    },
+    {
+      "id": 3256,
+      "name": "Louisiana Tech"
+    },
+    {
+      "id": 3257,
+      "name": "Louisville"
+    },
+    {
+      "id": 3258,
+      "name": "Loy Marymount"
+    },
+    {
+      "id": 3259,
+      "name": "Loyola MD"
+    },
+    {
+      "id": 3260,
+      "name": "Loyola-Chicago"
+    },
+    {
+      "id": 3261,
+      "name": "LSU"
+    },
+    {
+      "id": 3262,
+      "name": "MA Lowell"
+    },
+    {
+      "id": 3263,
+      "name": "Maine"
+    },
+    {
+      "id": 3264,
+      "name": "Manhattan"
+    },
+    {
+      "id": 3265,
+      "name": "Marist"
+    },
+    {
+      "id": 3266,
+      "name": "Marquette"
+    },
+    {
+      "id": 3267,
+      "name": "Marshall"
+    },
+    {
+      "id": 3268,
+      "name": "Maryland"
+    },
+    {
+      "id": 3269,
+      "name": "Massachusetts"
+    },
+    {
+      "id": 3270,
+      "name": "McNeese St"
+    },
+    {
+      "id": 3271,
+      "name": "MD E Shore"
+    },
+    {
+      "id": 3272,
+      "name": "Memphis"
+    },
+    {
+      "id": 3273,
+      "name": "Mercer"
+    },
+    {
+      "id": 3274,
+      "name": "Miami FL"
+    },
+    {
+      "id": 3275,
+      "name": "Miami OH"
+    },
+    {
+      "id": 3276,
+      "name": "Michigan"
+    },
+    {
+      "id": 3277,
+      "name": "Michigan St"
+    },
+    {
+      "id": 3278,
+      "name": "Minnesota"
+    },
+    {
+      "id": 3279,
+      "name": "Mississippi"
+    },
+    {
+      "id": 3280,
+      "name": "Mississippi St"
+    },
+    {
+      "id": 3281,
+      "name": "Missouri"
+    },
+    {
+      "id": 3282,
+      "name": "Missouri KC"
+    },
+    {
+      "id": 3283,
+      "name": "Missouri St"
+    },
+    {
+      "id": 3284,
+      "name": "Monmouth NJ"
+    },
+    {
+      "id": 3285,
+      "name": "Montana"
+    },
+    {
+      "id": 3286,
+      "name": "Montana St"
+    },
+    {
+      "id": 3287,
+      "name": "Morehead St"
+    },
+    {
+      "id": 3288,
+      "name": "Morgan St"
+    },
+    {
+      "id": 3289,
+      "name": "Morris Brown"
+    },
+    {
+      "id": 3290,
+      "name": "MS Valley St"
+    },
+    {
+      "id": 3291,
+      "name": "Mt St Mary's"
+    },
+    {
+      "id": 3292,
+      "name": "MTSU"
+    },
+    {
+      "id": 3293,
+      "name": "Murray St"
+    },
+    {
+      "id": 3294,
+      "name": "N Colorado"
+    },
+    {
+      "id": 3295,
+      "name": "N Dakota St"
+    },
+    {
+      "id": 3296,
+      "name": "N Illinois"
+    },
+    {
+      "id": 3297,
+      "name": "N Kentucky"
+    },
+    {
+      "id": 3298,
+      "name": "Navy"
+    },
+    {
+      "id": 3299,
+      "name": "NC A&T"
+    },
+    {
+      "id": 3300,
+      "name": "NC Central"
+    },
+    {
+      "id": 3301,
+      "name": "NC State"
+    },
+    {
+      "id": 3302,
+      "name": "NE Illinois"
+    },
+    {
+      "id": 3303,
+      "name": "NE Omaha"
+    },
+    {
+      "id": 3304,
+      "name": "Nebraska"
+    },
+    {
+      "id": 3305,
+      "name": "Nevada"
+    },
+    {
+      "id": 3306,
+      "name": "New Hampshire"
+    },
+    {
+      "id": 3307,
+      "name": "New Mexico"
+    },
+    {
+      "id": 3308,
+      "name": "New Mexico St"
+    },
+    {
+      "id": 3309,
+      "name": "New Orleans"
+    },
+    {
+      "id": 3310,
+      "name": "Niagara"
+    },
+    {
+      "id": 3311,
+      "name": "Nicholls St"
+    },
+    {
+      "id": 3312,
+      "name": "NJIT"
+    },
+    {
+      "id": 3313,
+      "name": "Norfolk St"
+    },
+    {
+      "id": 3314,
+      "name": "North Carolina"
+    },
+    {
+      "id": 3315,
+      "name": "North Dakota"
+    },
+    {
+      "id": 3316,
+      "name": "North Florida"
+    },
+    {
+      "id": 3317,
+      "name": "North Texas"
+    },
+    {
+      "id": 3318,
+      "name": "Northeastern"
+    },
+    {
+      "id": 3319,
+      "name": "Northern Arizona"
+    },
+    {
+      "id": 3320,
+      "name": "Northern Iowa"
+    },
+    {
+      "id": 3321,
+      "name": "Northwestern"
+    },
+    {
+      "id": 3322,
+      "name": "Northwestern LA"
+    },
+    {
+      "id": 3323,
+      "name": "Notre Dame"
+    },
+    {
+      "id": 3324,
+      "name": "Oakland"
+    },
+    {
+      "id": 3325,
+      "name": "Ohio"
+    },
+    {
+      "id": 3326,
+      "name": "Ohio St"
+    },
+    {
+      "id": 3327,
+      "name": "Okla City"
+    },
+    {
+      "id": 3328,
+      "name": "Oklahoma"
+    },
+    {
+      "id": 3329,
+      "name": "Oklahoma St"
+    },
+    {
+      "id": 3330,
+      "name": "Old Dominion"
+    },
+    {
+      "id": 3331,
+      "name": "Oral Roberts"
+    },
+    {
+      "id": 3332,
+      "name": "Oregon"
+    },
+    {
+      "id": 3333,
+      "name": "Oregon St"
+    },
+    {
+      "id": 3334,
+      "name": "Pacific"
+    },
+    {
+      "id": 3335,
+      "name": "Penn"
+    },
+    {
+      "id": 3336,
+      "name": "Penn St"
+    },
+    {
+      "id": 3337,
+      "name": "Pepperdine"
+    },
+    {
+      "id": 3338,
+      "name": "Pittsburgh"
+    },
+    {
+      "id": 3339,
+      "name": "Portland"
+    },
+    {
+      "id": 3340,
+      "name": "Portland St"
+    },
+    {
+      "id": 3341,
+      "name": "Prairie View"
+    },
+    {
+      "id": 3342,
+      "name": "Presbyterian"
+    },
+    {
+      "id": 3343,
+      "name": "Princeton"
+    },
+    {
+      "id": 3344,
+      "name": "Providence"
+    },
+    {
+      "id": 3345,
+      "name": "Purdue"
+    },
+    {
+      "id": 3346,
+      "name": "Quinnipiac"
+    },
+    {
+      "id": 3347,
+      "name": "Radford"
+    },
+    {
+      "id": 3348,
+      "name": "Rhode Island"
+    },
+    {
+      "id": 3349,
+      "name": "Rice"
+    },
+    {
+      "id": 3350,
+      "name": "Richmond"
+    },
+    {
+      "id": 3351,
+      "name": "Rider"
+    },
+    {
+      "id": 3352,
+      "name": "Robert Morris"
+    },
+    {
+      "id": 3353,
+      "name": "Rutgers"
+    },
+    {
+      "id": 3354,
+      "name": "S Carolina St"
+    },
+    {
+      "id": 3355,
+      "name": "S Dakota St"
+    },
+    {
+      "id": 3356,
+      "name": "S Illinois"
+    },
+    {
+      "id": 3357,
+      "name": "Sacred Heart"
+    },
+    {
+      "id": 3358,
+      "name": "Sam Houston St"
+    },
+    {
+      "id": 3359,
+      "name": "Samford"
+    },
+    {
+      "id": 3360,
+      "name": "San Diego"
+    },
+    {
+      "id": 3361,
+      "name": "San Diego St"
+    },
+    {
+      "id": 3362,
+      "name": "San Francisco"
+    },
+    {
+      "id": 3363,
+      "name": "San Jose St"
+    },
+    {
+      "id": 3364,
+      "name": "UC Santa Barbara"
+    },
+    {
+      "id": 3365,
+      "name": "Santa Clara"
+    },
+    {
+      "id": 3366,
+      "name": "Savannah St"
+    },
+    {
+      "id": 3367,
+      "name": "SC Upstate"
+    },
+    {
+      "id": 3368,
+      "name": "SE Louisiana"
+    },
+    {
+      "id": 3369,
+      "name": "SE Missouri St"
+    },
+    {
+      "id": 3370,
+      "name": "Seattle"
+    },
+    {
+      "id": 3371,
+      "name": "Seton Hall"
+    },
+    {
+      "id": 3372,
+      "name": "SF Austin"
+    },
+    {
+      "id": 3373,
+      "name": "Siena"
+    },
+    {
+      "id": 3374,
+      "name": "SMU"
+    },
+    {
+      "id": 3375,
+      "name": "South Alabama"
+    },
+    {
+      "id": 3376,
+      "name": "South Carolina"
+    },
+    {
+      "id": 3377,
+      "name": "South Dakota"
+    },
+    {
+      "id": 3378,
+      "name": "South Florida"
+    },
+    {
+      "id": 3379,
+      "name": "Southern Miss"
+    },
+    {
+      "id": 3380,
+      "name": "Southern Univ"
+    },
+    {
+      "id": 3381,
+      "name": "Southern Utah"
+    },
+    {
+      "id": 3382,
+      "name": "St Bonaventure"
+    },
+    {
+      "id": 3383,
+      "name": "St Francis NY"
+    },
+    {
+      "id": 3384,
+      "name": "St Francis PA"
+    },
+    {
+      "id": 3385,
+      "name": "St John's"
+    },
+    {
+      "id": 3386,
+      "name": "St Joseph's PA"
+    },
+    {
+      "id": 3387,
+      "name": "St Louis"
+    },
+    {
+      "id": 3388,
+      "name": "St Mary's CA"
+    },
+    {
+      "id": 3389,
+      "name": "St Peter's"
+    },
+    {
+      "id": 3390,
+      "name": "Stanford"
+    },
+    {
+      "id": 3391,
+      "name": "Stetson"
+    },
+    {
+      "id": 3392,
+      "name": "Stony Brook"
+    },
+    {
+      "id": 3393,
+      "name": "Syracuse"
+    },
+    {
+      "id": 3394,
+      "name": "TAM C. Christi"
+    },
+    {
+      "id": 3395,
+      "name": "TCU"
+    },
+    {
+      "id": 3396,
+      "name": "Temple"
+    },
+    {
+      "id": 3397,
+      "name": "Tennessee"
+    },
+    {
+      "id": 3398,
+      "name": "Tennessee St"
+    },
+    {
+      "id": 3399,
+      "name": "Tennessee Tech"
+    },
+    {
+      "id": 3400,
+      "name": "Texas"
+    },
+    {
+      "id": 3401,
+      "name": "Texas A&M"
+    },
+    {
+      "id": 3402,
+      "name": "Texas St"
+    },
+    {
+      "id": 3403,
+      "name": "Texas Tech"
+    },
+    {
+      "id": 3404,
+      "name": "TN Martin"
+    },
+    {
+      "id": 3405,
+      "name": "Toledo"
+    },
+    {
+      "id": 3406,
+      "name": "Towson"
+    },
+    {
+      "id": 3407,
+      "name": "Troy"
+    },
+    {
+      "id": 3408,
+      "name": "Tulane"
+    },
+    {
+      "id": 3409,
+      "name": "Tulsa"
+    },
+    {
+      "id": 3410,
+      "name": "UTRGV"
+    },
+    {
+      "id": 3411,
+      "name": "TX Southern"
+    },
+    {
+      "id": 3412,
+      "name": "UAB"
+    },
+    {
+      "id": 3413,
+      "name": "UC Davis"
+    },
+    {
+      "id": 3414,
+      "name": "UC Irvine"
+    },
+    {
+      "id": 3415,
+      "name": "UC Riverside"
+    },
+    {
+      "id": 3416,
+      "name": "UCF"
+    },
+    {
+      "id": 3417,
+      "name": "UCLA"
+    },
+    {
+      "id": 3418,
+      "name": "Louisiana"
+    },
+    {
+      "id": 3419,
+      "name": "ULM"
+    },
+    {
+      "id": 3420,
+      "name": "UMBC"
+    },
+    {
+      "id": 3421,
+      "name": "UNC Asheville"
+    },
+    {
+      "id": 3422,
+      "name": "UNC Greensboro"
+    },
+    {
+      "id": 3423,
+      "name": "UNC Wilmington"
+    },
+    {
+      "id": 3424,
+      "name": "UNLV"
+    },
+    {
+      "id": 3425,
+      "name": "USC"
+    },
+    {
+      "id": 3426,
+      "name": "UT Arlington"
+    },
+    {
+      "id": 3427,
+      "name": "UT San Antonio"
+    },
+    {
+      "id": 3428,
+      "name": "Utah"
+    },
+    {
+      "id": 3429,
+      "name": "Utah St"
+    },
+    {
+      "id": 3430,
+      "name": "Utah Valley"
+    },
+    {
+      "id": 3431,
+      "name": "UTEP"
+    },
+    {
+      "id": 3432,
+      "name": "Utica"
+    },
+    {
+      "id": 3433,
+      "name": "VCU"
+    },
+    {
+      "id": 3434,
+      "name": "Valparaiso"
+    },
+    {
+      "id": 3435,
+      "name": "Vanderbilt"
+    },
+    {
+      "id": 3436,
+      "name": "Vermont"
+    },
+    {
+      "id": 3437,
+      "name": "Villanova"
+    },
+    {
+      "id": 3438,
+      "name": "Virginia"
+    },
+    {
+      "id": 3439,
+      "name": "Virginia Tech"
+    },
+    {
+      "id": 3441,
+      "name": "W Carolina"
+    },
+    {
+      "id": 3442,
+      "name": "W Illinois"
+    },
+    {
+      "id": 3443,
+      "name": "WKU"
+    },
+    {
+      "id": 3444,
+      "name": "W Michigan"
+    },
+    {
+      "id": 3445,
+      "name": "W Salem St"
+    },
+    {
+      "id": 3446,
+      "name": "W Texas A&M"
+    },
+    {
+      "id": 3447,
+      "name": "Wagner"
+    },
+    {
+      "id": 3448,
+      "name": "Wake Forest"
+    },
+    {
+      "id": 3449,
+      "name": "Washington"
+    },
+    {
+      "id": 3450,
+      "name": "Washington St"
+    },
+    {
+      "id": 3451,
+      "name": "Weber St"
+    },
+    {
+      "id": 3452,
+      "name": "West Virginia"
+    },
+    {
+      "id": 3453,
+      "name": "WI Green Bay"
+    },
+    {
+      "id": 3454,
+      "name": "WI Milwaukee"
+    },
+    {
+      "id": 3455,
+      "name": "Wichita St"
+    },
+    {
+      "id": 3456,
+      "name": "William & Mary"
+    },
+    {
+      "id": 3457,
+      "name": "Winthrop"
+    },
+    {
+      "id": 3458,
+      "name": "Wisconsin"
+    },
+    {
+      "id": 3459,
+      "name": "Wofford"
+    },
+    {
+      "id": 3460,
+      "name": "Wright St"
+    },
+    {
+      "id": 3461,
+      "name": "Wyoming"
+    },
+    {
+      "id": 3462,
+      "name": "Xavier"
+    },
+    {
+      "id": 3463,
+      "name": "Yale"
+    },
+    {
+      "id": 3464,
+      "name": "Youngstown St"
+    },
+    {
+      "id": 3465,
+      "name": "Cal Baptist"
+    },
+    {
+      "id": 3466,
+      "name": "North Alabama"
+    },
+    {
+      "id": 3467,
+      "name": "Merrimack"
+    },
+    {
+      "id": 3468,
+      "name": "Bellarmine"
+    },
+    {
+      "id": 3469,
+      "name": "Utah Tech"
+    },
+    {
+      "id": 3470,
+      "name": "Tarleton St"
+    },
+    {
+      "id": 3471,
+      "name": "UC San Diego"
+    },
+    {
+      "id": 3472,
+      "name": "St Thomas MN"
+    },
+    {
+      "id": 3473,
+      "name": "Lindenwood"
+    },
+    {
+      "id": 3474,
+      "name": "Queens NC"
+    },
+    {
+      "id": 3475,
+      "name": "Southern Indiana"
+    },
+    {
+      "id": 3476,
+      "name": "Stonehill"
+    },
+    {
+      "id": 3477,
+      "name": "East Texas A&M"
+    },
+    {
+      "id": 3478,
+      "name": "Le Moyne"
+    },
+    {
+      "id": 3479,
+      "name": "Mercyhurst"
+    },
+    {
+      "id": 3480,
+      "name": "West Georgia"
+    },
+    {
+      "id": 3481,
+      "name": "New Haven"
+    }
+  ],
+  "teamIds": [
+    3101,
+    3102,
+    3103,
+    3104,
+    3105,
+    3106,
+    3107,
+    3108,
+    3109,
+    3110,
+    3111,
+    3112,
+    3113,
+    3114,
+    3115,
+    3116,
+    3117,
+    3118,
+    3119,
+    3120,
+    3121,
+    3122,
+    3123,
+    3124,
+    3125,
+    3126,
+    3127,
+    3128,
+    3129,
+    3130,
+    3131,
+    3132,
+    3133,
+    3134,
+    3135,
+    3136,
+    3137,
+    3138,
+    3139,
+    3140,
+    3141,
+    3142,
+    3143,
+    3144,
+    3145,
+    3146,
+    3147,
+    3148,
+    3149,
+    3150,
+    3151,
+    3152,
+    3153,
+    3155,
+    3156,
+    3157,
+    3158,
+    3159,
+    3160,
+    3161,
+    3162,
+    3163,
+    3164,
+    3165,
+    3166,
+    3167,
+    3168,
+    3169,
+    3170,
+    3171,
+    3172,
+    3173,
+    3174,
+    3175,
+    3176,
+    3177,
+    3178,
+    3179,
+    3180,
+    3181,
+    3182,
+    3183,
+    3184,
+    3185,
+    3186,
+    3187,
+    3188,
+    3189,
+    3190,
+    3191,
+    3192,
+    3193,
+    3194,
+    3195,
+    3196,
+    3197,
+    3198,
+    3199,
+    3200,
+    3201,
+    3202,
+    3203,
+    3204,
+    3205,
+    3206,
+    3207,
+    3208,
+    3209,
+    3210,
+    3211,
+    3212,
+    3213,
+    3214,
+    3215,
+    3216,
+    3217,
+    3218,
+    3219,
+    3220,
+    3221,
+    3222,
+    3223,
+    3224,
+    3225,
+    3226,
+    3227,
+    3228,
+    3229,
+    3230,
+    3231,
+    3232,
+    3233,
+    3234,
+    3235,
+    3236,
+    3237,
+    3238,
+    3239,
+    3240,
+    3241,
+    3242,
+    3243,
+    3244,
+    3245,
+    3246,
+    3247,
+    3248,
+    3249,
+    3250,
+    3251,
+    3252,
+    3253,
+    3254,
+    3255,
+    3256,
+    3257,
+    3258,
+    3259,
+    3260,
+    3261,
+    3262,
+    3263,
+    3264,
+    3265,
+    3266,
+    3267,
+    3268,
+    3269,
+    3270,
+    3271,
+    3272,
+    3273,
+    3274,
+    3275,
+    3276,
+    3277,
+    3278,
+    3279,
+    3280,
+    3281,
+    3282,
+    3283,
+    3284,
+    3285,
+    3286,
+    3287,
+    3288,
+    3289,
+    3290,
+    3291,
+    3292,
+    3293,
+    3294,
+    3295,
+    3296,
+    3297,
+    3298,
+    3299,
+    3300,
+    3301,
+    3302,
+    3303,
+    3304,
+    3305,
+    3306,
+    3307,
+    3308,
+    3309,
+    3310,
+    3311,
+    3312,
+    3313,
+    3314,
+    3315,
+    3316,
+    3317,
+    3318,
+    3319,
+    3320,
+    3321,
+    3322,
+    3323,
+    3324,
+    3325,
+    3326,
+    3327,
+    3328,
+    3329,
+    3330,
+    3331,
+    3332,
+    3333,
+    3334,
+    3335,
+    3336,
+    3337,
+    3338,
+    3339,
+    3340,
+    3341,
+    3342,
+    3343,
+    3344,
+    3345,
+    3346,
+    3347,
+    3348,
+    3349,
+    3350,
+    3351,
+    3352,
+    3353,
+    3354,
+    3355,
+    3356,
+    3357,
+    3358,
+    3359,
+    3360,
+    3361,
+    3362,
+    3363,
+    3364,
+    3365,
+    3366,
+    3367,
+    3368,
+    3369,
+    3370,
+    3371,
+    3372,
+    3373,
+    3374,
+    3375,
+    3376,
+    3377,
+    3378,
+    3379,
+    3380,
+    3381,
+    3382,
+    3383,
+    3384,
+    3385,
+    3386,
+    3387,
+    3388,
+    3389,
+    3390,
+    3391,
+    3392,
+    3393,
+    3394,
+    3395,
+    3396,
+    3397,
+    3398,
+    3399,
+    3400,
+    3401,
+    3402,
+    3403,
+    3404,
+    3405,
+    3406,
+    3407,
+    3408,
+    3409,
+    3410,
+    3411,
+    3412,
+    3413,
+    3414,
+    3415,
+    3416,
+    3417,
+    3418,
+    3419,
+    3420,
+    3421,
+    3422,
+    3423,
+    3424,
+    3425,
+    3426,
+    3427,
+    3428,
+    3429,
+    3430,
+    3431,
+    3432,
+    3433,
+    3434,
+    3435,
+    3436,
+    3437,
+    3438,
+    3439,
+    3441,
+    3442,
+    3443,
+    3444,
+    3445,
+    3446,
+    3447,
+    3448,
+    3449,
+    3450,
+    3451,
+    3452,
+    3453,
+    3454,
+    3455,
+    3456,
+    3457,
+    3458,
+    3459,
+    3460,
+    3461,
+    3462,
+    3463,
+    3464,
+    3465,
+    3466,
+    3467,
+    3468,
+    3469,
+    3470,
+    3471,
+    3472,
+    3473,
+    3474,
+    3475,
+    3476,
+    3477,
+    3478,
+    3479,
+    3480,
+    3481
+  ],
+  "seeds": [
+    {
+      "seed": "W01",
+      "teamId": 3163
+    },
+    {
+      "seed": "W02",
+      "teamId": 3435
+    },
+    {
+      "seed": "W03",
+      "teamId": 3326
+    },
+    {
+      "seed": "W04",
+      "teamId": 3314
+    },
+    {
+      "seed": "W05",
+      "teamId": 3268
+    },
+    {
+      "seed": "W06",
+      "teamId": 3323
+    },
+    {
+      "seed": "W07",
+      "teamId": 3228
+    },
+    {
+      "seed": "W08",
+      "teamId": 3235
+    },
+    {
+      "seed": "W09",
+      "teamId": 3393
+    },
+    {
+      "seed": "W10",
+      "teamId": 3160
+    },
+    {
+      "seed": "W11",
+      "teamId": 3193
+    },
+    {
+      "seed": "W12",
+      "teamId": 3293
+    },
+    {
+      "seed": "W13",
+      "teamId": 3442
+    },
+    {
+      "seed": "W14",
+      "teamId": 3224
+    },
+    {
+      "seed": "W15",
+      "teamId": 3219
+    },
+    {
+      "seed": "W16",
+      "teamId": 3427
+    },
+    {
+      "seed": "X01",
+      "teamId": 3376
+    },
+    {
+      "seed": "X02",
+      "teamId": 3234
+    },
+    {
+      "seed": "X03",
+      "teamId": 3395
+    },
+    {
+      "seed": "X04",
+      "teamId": 3328
+    },
+    {
+      "seed": "X05",
+      "teamId": 3277
+    },
+    {
+      "seed": "X06",
+      "teamId": 3449
+    },
+    {
+      "seed": "X07",
+      "teamId": 3208
+    },
+    {
+      "seed": "X08",
+      "teamId": 3155
+    },
+    {
+      "seed": "X09",
+      "teamId": 3425
+    },
+    {
+      "seed": "X10a",
+      "teamId": 3113
+    },
+    {
+      "seed": "X10b",
+      "teamId": 3438
+    },
+    {
+      "seed": "X11",
+      "teamId": 3355
+    },
+    {
+      "seed": "X12",
+      "teamId": 3161
+    },
+    {
+      "seed": "X13",
+      "teamId": 3225
+    },
+    {
+      "seed": "X14",
+      "teamId": 3471
+    },
+    {
+      "seed": "X15",
+      "teamId": 3192
+    },
+    {
+      "seed": "X16a",
+      "teamId": 3359
+    },
+    {
+      "seed": "X16b",
+      "teamId": 3380
+    },
+    {
+      "seed": "Y01",
+      "teamId": 3400
+    },
+    {
+      "seed": "Y02",
+      "teamId": 3276
+    },
+    {
+      "seed": "Y03",
+      "teamId": 3257
+    },
+    {
+      "seed": "Y04",
+      "teamId": 3452
+    },
+    {
+      "seed": "Y05",
+      "teamId": 3246
+    },
+    {
+      "seed": "Y06",
+      "teamId": 3104
+    },
+    {
+      "seed": "Y07",
+      "teamId": 3301
+    },
+    {
+      "seed": "Y08",
+      "teamId": 3332
+    },
+    {
+      "seed": "Y09",
+      "teamId": 3439
+    },
+    {
+      "seed": "Y10",
+      "teamId": 3397
+    },
+    {
+      "seed": "Y11",
+      "teamId": 3348
+    },
+    {
+      "seed": "Y12",
+      "teamId": 3241
+    },
+    {
+      "seed": "Y13",
+      "teamId": 3275
+    },
+    {
+      "seed": "Y14",
+      "teamId": 3436
+    },
+    {
+      "seed": "Y15",
+      "teamId": 3221
+    },
+    {
+      "seed": "Y16a",
+      "teamId": 3283
+    },
+    {
+      "seed": "Y16b",
+      "teamId": 3372
+    },
+    {
+      "seed": "Z01",
+      "teamId": 3417
+    },
+    {
+      "seed": "Z02",
+      "teamId": 3261
+    },
+    {
+      "seed": "Z03",
+      "teamId": 3181
+    },
+    {
+      "seed": "Z04",
+      "teamId": 3278
+    },
+    {
+      "seed": "Z05",
+      "teamId": 3279
+    },
+    {
+      "seed": "Z06",
+      "teamId": 3124
+    },
+    {
+      "seed": "Z07",
+      "teamId": 3403
+    },
+    {
+      "seed": "Z08",
+      "teamId": 3329
+    },
+    {
+      "seed": "Z09",
+      "teamId": 3343
+    },
+    {
+      "seed": "Z10",
+      "teamId": 3437
+    },
+    {
+      "seed": "Z11a",
+      "teamId": 3304
+    },
+    {
+      "seed": "Z11b",
+      "teamId": 3350
+    },
+    {
+      "seed": "Z12",
+      "teamId": 3211
+    },
+    {
+      "seed": "Z13",
+      "teamId": 3453
+    },
+    {
+      "seed": "Z14",
+      "teamId": 3158
+    },
+    {
+      "seed": "Z15",
+      "teamId": 3239
+    },
+    {
+      "seed": "Z16",
+      "teamId": 3465
+    }
+  ],
+  "slots": [
+    {
+      "slot": "R1W1",
+      "strong": "W01",
+      "weak": "W16"
+    },
+    {
+      "slot": "R1W2",
+      "strong": "W02",
+      "weak": "W15"
+    },
+    {
+      "slot": "R1W3",
+      "strong": "W03",
+      "weak": "W14"
+    },
+    {
+      "slot": "R1W4",
+      "strong": "W04",
+      "weak": "W13"
+    },
+    {
+      "slot": "R1W5",
+      "strong": "W05",
+      "weak": "W12"
+    },
+    {
+      "slot": "R1W6",
+      "strong": "W06",
+      "weak": "W11"
+    },
+    {
+      "slot": "R1W7",
+      "strong": "W07",
+      "weak": "W10"
+    },
+    {
+      "slot": "R1W8",
+      "strong": "W08",
+      "weak": "W09"
+    },
+    {
+      "slot": "R1X1",
+      "strong": "X01",
+      "weak": "X16"
+    },
+    {
+      "slot": "R1X2",
+      "strong": "X02",
+      "weak": "X15"
+    },
+    {
+      "slot": "R1X3",
+      "strong": "X03",
+      "weak": "X14"
+    },
+    {
+      "slot": "R1X4",
+      "strong": "X04",
+      "weak": "X13"
+    },
+    {
+      "slot": "R1X5",
+      "strong": "X05",
+      "weak": "X12"
+    },
+    {
+      "slot": "R1X6",
+      "strong": "X06",
+      "weak": "X11"
+    },
+    {
+      "slot": "R1X7",
+      "strong": "X07",
+      "weak": "X10"
+    },
+    {
+      "slot": "R1X8",
+      "strong": "X08",
+      "weak": "X09"
+    },
+    {
+      "slot": "R1Y1",
+      "strong": "Y01",
+      "weak": "Y16"
+    },
+    {
+      "slot": "R1Y2",
+      "strong": "Y02",
+      "weak": "Y15"
+    },
+    {
+      "slot": "R1Y3",
+      "strong": "Y03",
+      "weak": "Y14"
+    },
+    {
+      "slot": "R1Y4",
+      "strong": "Y04",
+      "weak": "Y13"
+    },
+    {
+      "slot": "R1Y5",
+      "strong": "Y05",
+      "weak": "Y12"
+    },
+    {
+      "slot": "R1Y6",
+      "strong": "Y06",
+      "weak": "Y11"
+    },
+    {
+      "slot": "R1Y7",
+      "strong": "Y07",
+      "weak": "Y10"
+    },
+    {
+      "slot": "R1Y8",
+      "strong": "Y08",
+      "weak": "Y09"
+    },
+    {
+      "slot": "R1Z1",
+      "strong": "Z01",
+      "weak": "Z16"
+    },
+    {
+      "slot": "R1Z2",
+      "strong": "Z02",
+      "weak": "Z15"
+    },
+    {
+      "slot": "R1Z3",
+      "strong": "Z03",
+      "weak": "Z14"
+    },
+    {
+      "slot": "R1Z4",
+      "strong": "Z04",
+      "weak": "Z13"
+    },
+    {
+      "slot": "R1Z5",
+      "strong": "Z05",
+      "weak": "Z12"
+    },
+    {
+      "slot": "R1Z6",
+      "strong": "Z06",
+      "weak": "Z11"
+    },
+    {
+      "slot": "R1Z7",
+      "strong": "Z07",
+      "weak": "Z10"
+    },
+    {
+      "slot": "R1Z8",
+      "strong": "Z08",
+      "weak": "Z09"
+    },
+    {
+      "slot": "R2W1",
+      "strong": "R1W1",
+      "weak": "R1W8"
+    },
+    {
+      "slot": "R2W2",
+      "strong": "R1W2",
+      "weak": "R1W7"
+    },
+    {
+      "slot": "R2W3",
+      "strong": "R1W3",
+      "weak": "R1W6"
+    },
+    {
+      "slot": "R2W4",
+      "strong": "R1W4",
+      "weak": "R1W5"
+    },
+    {
+      "slot": "R2X1",
+      "strong": "R1X1",
+      "weak": "R1X8"
+    },
+    {
+      "slot": "R2X2",
+      "strong": "R1X2",
+      "weak": "R1X7"
+    },
+    {
+      "slot": "R2X3",
+      "strong": "R1X3",
+      "weak": "R1X6"
+    },
+    {
+      "slot": "R2X4",
+      "strong": "R1X4",
+      "weak": "R1X5"
+    },
+    {
+      "slot": "R2Y1",
+      "strong": "R1Y1",
+      "weak": "R1Y8"
+    },
+    {
+      "slot": "R2Y2",
+      "strong": "R1Y2",
+      "weak": "R1Y7"
+    },
+    {
+      "slot": "R2Y3",
+      "strong": "R1Y3",
+      "weak": "R1Y6"
+    },
+    {
+      "slot": "R2Y4",
+      "strong": "R1Y4",
+      "weak": "R1Y5"
+    },
+    {
+      "slot": "R2Z1",
+      "strong": "R1Z1",
+      "weak": "R1Z8"
+    },
+    {
+      "slot": "R2Z2",
+      "strong": "R1Z2",
+      "weak": "R1Z7"
+    },
+    {
+      "slot": "R2Z3",
+      "strong": "R1Z3",
+      "weak": "R1Z6"
+    },
+    {
+      "slot": "R2Z4",
+      "strong": "R1Z4",
+      "weak": "R1Z5"
+    },
+    {
+      "slot": "R3W1",
+      "strong": "R2W1",
+      "weak": "R2W4"
+    },
+    {
+      "slot": "R3W2",
+      "strong": "R2W2",
+      "weak": "R2W3"
+    },
+    {
+      "slot": "R3X1",
+      "strong": "R2X1",
+      "weak": "R2X4"
+    },
+    {
+      "slot": "R3X2",
+      "strong": "R2X2",
+      "weak": "R2X3"
+    },
+    {
+      "slot": "R3Y1",
+      "strong": "R2Y1",
+      "weak": "R2Y4"
+    },
+    {
+      "slot": "R3Y2",
+      "strong": "R2Y2",
+      "weak": "R2Y3"
+    },
+    {
+      "slot": "R3Z1",
+      "strong": "R2Z1",
+      "weak": "R2Z4"
+    },
+    {
+      "slot": "R3Z2",
+      "strong": "R2Z2",
+      "weak": "R2Z3"
+    },
+    {
+      "slot": "R4W1",
+      "strong": "R3W1",
+      "weak": "R3W2"
+    },
+    {
+      "slot": "R4X1",
+      "strong": "R3X1",
+      "weak": "R3X2"
+    },
+    {
+      "slot": "R4Y1",
+      "strong": "R3Y1",
+      "weak": "R3Y2"
+    },
+    {
+      "slot": "R4Z1",
+      "strong": "R3Z1",
+      "weak": "R3Z2"
+    },
+    {
+      "slot": "R5WX",
+      "strong": "R4W1",
+      "weak": "R4X1"
+    },
+    {
+      "slot": "R5YZ",
+      "strong": "R4Y1",
+      "weak": "R4Z1"
+    },
+    {
+      "slot": "R6CH",
+      "strong": "R5WX",
+      "weak": "R5YZ"
+    },
+    {
+      "slot": "X10",
+      "strong": "X10a",
+      "weak": "X10b"
+    },
+    {
+      "slot": "X16",
+      "strong": "X16a",
+      "weak": "X16b"
+    },
+    {
+      "slot": "Y16",
+      "strong": "Y16a",
+      "weak": "Y16b"
+    },
+    {
+      "slot": "Z11",
+      "strong": "Z11a",
+      "weak": "Z11b"
+    }
+  ],
+  "resolvedSlots": {
+    "Y16": 3283,
+    "Z11": 3304,
+    "X16": 3380,
+    "X10": 3438,
+    "R1W1": 3163,
+    "R1W2": 3435,
+    "R1W3": 3326,
+    "R1W4": 3314,
+    "R1W5": 3268,
+    "R1W6": 3323,
+    "R1W7": 3228,
+    "R1W8": 3393,
+    "R1X1": 3376,
+    "R1X2": 3234,
+    "R1X3": 3395,
+    "R1X4": 3328,
+    "R1X5": 3277,
+    "R1X6": 3449,
+    "R1X7": 3438,
+    "R1X8": 3425,
+    "R1Y1": 3400,
+    "R1Y2": 3276,
+    "R1Y3": 3257,
+    "R1Y4": 3452,
+    "R1Y5": 3246,
+    "R1Y6": 3104,
+    "R1Y7": 3301,
+    "R1Y8": 3332,
+    "R1Z1": 3417,
+    "R1Z2": 3261,
+    "R1Z3": 3181,
+    "R1Z4": 3278,
+    "R1Z5": 3279,
+    "R1Z6": 3124,
+    "R1Z7": 3403,
+    "R1Z8": 3329,
+    "R2W4": 3314,
+    "R2X4": 3328,
+    "R2Y1": 3400,
+    "R2Y2": 3276,
+    "R2Z2": 3261,
+    "R2Z3": 3181,
+    "R2Z4": 3278
+  }
+}

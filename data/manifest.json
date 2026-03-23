@@ -1,0 +1,14 @@
+{
+  "season": 2026,
+  "sourceRoot": "/Users/aburkard/fun/madness_pyro",
+  "men": {
+    "meta": "data/men-meta.json",
+    "ourDefault": "data/men-our-default.csv",
+    "benchmarkDefault": "data/men-benchmark-default.csv"
+  },
+  "women": {
+    "meta": "data/women-meta.json",
+    "ourDefault": "data/women-our-default.csv",
+    "benchmarkDefault": "data/women-benchmark-default.csv"
+  }
+}

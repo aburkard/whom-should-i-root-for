@@ -1,0 +1,9 @@
+{
+  "name": "whom-should-i-root-for",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:data": "python3 scripts/build_data.py",
+    "serve": "python3 -m http.server 4173"
+  }
+}

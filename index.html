@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whom Should I Root For?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Spectral:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/site.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="eyebrow">2026 Tournament Rooting Guide</div>
+        <h1>Whom Should I Root For?</h1>
+        <p>
+          Upload your submission, compare it to the expert median, and see which
+          remaining winners help your final score most. This MVP uses the live
+          resolved bracket state bundled from the modeling repo and computes the
+          recommendation tree directly in your browser.
+        </p>
+      </section>
+
+      <section class="toolbar">
+        <div class="toolbar-row">
+          <div class="pill-group" aria-label="Gender tabs">
+            <button data-gender="men" data-active="true">Men</button>
+            <button data-gender="women" data-active="false">Women</button>
+          </div>
+
+          <label>
+            Metric
+            <select id="metric">
+              <option value="brier">Brier</option>
+              <option value="logloss">Log Loss</option>
+            </select>
+          </label>
+
+          <label>
+            Forecast
+            <select id="forecast-mode">
+              <option value="blend">50/50 blend</option>
+              <option value="ours">Our submission</option>
+              <option value="benchmark">Expert benchmark</option>
+            </select>
+          </label>
+
+          <label id="weight-wrap">
+            Blend weight
+            <input id="weight" type="range" min="0" max="1" step="0.05" value="0.5" />
+            <span id="weight-value" class="muted">50% ours</span>
+          </label>
+        </div>
+
+        <div class="upload-grid">
+          <label>
+            Your submission CSV
+            <input id="our-upload" type="file" accept=".csv,text/csv" />
+          </label>
+          <label>
+            Benchmark submission CSV
+            <input id="benchmark-upload" type="file" accept=".csv,text/csv" />
+          </label>
+          <label>
+            Defaults
+            <button id="reset-defaults" class="secondary" type="button">Reset to bundled defaults</button>
+          </label>
+        </div>
+
+        <div id="status" class="footer-note">Loading…</div>
+      </section>
+
+      <section id="summary"></section>
+      <section id="table-wrap"></section>
+      <p class="footer-note">
+        Current recommendations are exact for expected edge and Monte Carlo for
+        finish-ahead probability. This MVP compares against one benchmark
+        submission, not a full field model.
+      </p>
+    </main>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
