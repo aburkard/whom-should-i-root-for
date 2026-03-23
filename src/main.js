@@ -20,6 +20,11 @@ const state = {
     our: null,
     benchmark: null,
   },
+  manualResolved: {
+    men: {},
+    women: {},
+  },
+  manualHistory: [],
   benchmarkSource: "median",
   tableSort: {
     key: "displaySwing",
@@ -33,6 +38,8 @@ const els = {};
 const STORAGE_KEYS = {
   ourUpload: "wsirf:our-upload",
   benchmarkSource: "wsirf:benchmark-source",
+  manualResolved: "wsirf:manual-resolved",
+  manualHistory: "wsirf:manual-history",
 };
 
 const REGION_CONFIG = {
@@ -74,12 +81,27 @@ function restorePersistedState() {
   try {
     const storedUpload = localStorage.getItem(STORAGE_KEYS.ourUpload);
     const storedBenchmarkSource = localStorage.getItem(STORAGE_KEYS.benchmarkSource);
+    const storedManualResolved = localStorage.getItem(STORAGE_KEYS.manualResolved);
+    const storedManualHistory = localStorage.getItem(STORAGE_KEYS.manualHistory);
     if (storedUpload) {
       state.uploads.our = storedUpload;
       state.restoredFromStorage = true;
     }
     if (storedBenchmarkSource && storedBenchmarkSource !== "upload") {
       state.benchmarkSource = storedBenchmarkSource;
+    }
+    if (storedManualResolved) {
+      const parsed = JSON.parse(storedManualResolved);
+      state.manualResolved = {
+        men: parsed?.men ?? {},
+        women: parsed?.women ?? {},
+      };
+    }
+    if (storedManualHistory) {
+      const parsed = JSON.parse(storedManualHistory);
+      if (Array.isArray(parsed)) {
+        state.manualHistory = parsed;
+      }
     }
   } catch (error) {
     console.warn("Failed to restore state", error);
@@ -99,8 +121,29 @@ function persistState() {
     } else {
       localStorage.removeItem(STORAGE_KEYS.benchmarkSource);
     }
+
+    localStorage.setItem(STORAGE_KEYS.manualResolved, JSON.stringify(state.manualResolved));
+    localStorage.setItem(STORAGE_KEYS.manualHistory, JSON.stringify(state.manualHistory));
   } catch (error) {
     console.warn("Failed to persist state", error);
+  }
+}
+
+function cloneManualState() {
+  return {
+    men: { ...state.manualResolved.men },
+    women: { ...state.manualResolved.women },
+  };
+}
+
+function sameManualState(a, b) {
+  return JSON.stringify(a) === JSON.stringify(b);
+}
+
+function pushManualHistorySnapshot() {
+  state.manualHistory.push(cloneManualState());
+  if (state.manualHistory.length > 100) {
+    state.manualHistory = state.manualHistory.slice(-100);
   }
 }
 
@@ -205,6 +248,59 @@ function combineAnalyses(men, women) {
   };
 }
 
+function manualResolvedMap(gender) {
+  return new Map(
+    Object.entries(state.manualResolved[gender] || {}).map(([slot, teamId]) => [slot, Number(teamId)]),
+  );
+}
+
+function buildEffectiveContext(baseContext, gender) {
+  const officialResolved = new Map(baseContext.completedSlots);
+  const manualInput = manualResolvedMap(gender);
+  const appliedManual = new Map();
+  const allSlots = [...baseContext.allSlots].sort(
+    (a, b) => roundFromSlot(a) - roundFromSlot(b) || a.localeCompare(b),
+  );
+
+  for (const slot of allSlots) {
+    if (officialResolved.has(slot)) continue;
+    if (!manualInput.has(slot)) continue;
+    const participants = slotParticipantsIfKnown(slot, baseContext, officialResolved);
+    if (!participants) continue;
+    const chosenTeam = manualInput.get(slot);
+    if (!participants.includes(chosenTeam)) continue;
+    officialResolved.set(slot, chosenTeam);
+    appliedManual.set(slot, chosenTeam);
+  }
+
+  return {
+    ...baseContext,
+    scopeKey: gender,
+    baseCompletedSlots: new Map(baseContext.completedSlots),
+    completedSlots: officialResolved,
+    manualCompletedSlots: appliedManual,
+  };
+}
+
+function syncManualResolvedFromContexts(menContext, womenContext) {
+  const nextManual = {
+    men: Object.fromEntries(menContext.manualCompletedSlots),
+    women: Object.fromEntries(womenContext.manualCompletedSlots),
+  };
+  if (!sameManualState(nextManual, state.manualResolved)) {
+    state.manualResolved = nextManual;
+    persistState();
+  }
+}
+
+function manualCountForView(view) {
+  if (view.scope === "combined") {
+    return (view.menContext?.manualCompletedSlots.size || 0) +
+      (view.womenContext?.manualCompletedSlots.size || 0);
+  }
+  return view.context?.manualCompletedSlots.size || 0;
+}
+
 function enrichRowsForScope(rows, ownAnalysis, otherAnalysis, totalGames, genderLabel) {
   return rows.map((row) => {
     const otherEdge = otherAnalysis ? otherAnalysis.expectedFinalEdgeTotal : 0;
@@ -243,11 +339,12 @@ function enrichRowsForScope(rows, ownAnalysis, otherAnalysis, totalGames, gender
 
 function renderSummary(analysis) {
   const digits = scoreDigits(state.metric);
+  const manualCount = analysis.manualCount || 0;
   els.summary.innerHTML = `
     <div class="card">
       <div class="eyebrow">Games Scored So Far</div>
       <div class="big">${analysis.completedCount}</div>
-      <div class="muted">${analysis.remainingCount} remaining of ${analysis.totalGames}</div>
+      <div class="muted">${analysis.remainingCount} remaining of ${analysis.totalGames}${manualCount ? ` · ${manualCount} entered here` : ""}</div>
     </div>
     <div class="card">
       <div class="eyebrow">Your ${metricNoun(state.metric)} So Far</div>
@@ -343,11 +440,59 @@ function renderTable(view) {
 function renderAwaitingSubmission() {
   els.summary.innerHTML = "";
   els.bracketWrap.innerHTML = "";
+  updateManualControls();
   els.tableWrap.innerHTML = `
     <div class="list-card table-card">
       <div class="empty">Upload your submission CSV to generate the rooting guide.</div>
     </div>
   `;
+}
+
+function updateManualControls(view = null) {
+  const manualCount = view ? manualCountForView(view) : (
+    Object.keys(state.manualResolved.men || {}).length +
+    Object.keys(state.manualResolved.women || {}).length
+  );
+  els.manualSummary.textContent = manualCount
+    ? `Click a team in the bracket to enter or change a result. ${manualCount} manual ${manualCount === 1 ? "result" : "results"} entered in this browser.`
+    : "Click a team in the bracket to enter or change a result. No manual results entered in this browser.";
+  els.undoManual.disabled = state.manualHistory.length === 0;
+  els.clearManual.disabled = manualCount === 0;
+}
+
+async function setManualWinner(gender, slot, teamId) {
+  const current = Number(state.manualResolved[gender]?.[slot] ?? 0);
+  if (current === teamId) return;
+  pushManualHistorySnapshot();
+  state.manualResolved[gender] = {
+    ...state.manualResolved[gender],
+    [slot]: teamId,
+  };
+  persistState();
+  await recompute();
+  updateStatus(`Saved ${gender} result for ${slot}.`);
+}
+
+async function undoManualResult() {
+  if (!state.manualHistory.length) return;
+  const snapshot = state.manualHistory.pop();
+  state.manualResolved = {
+    men: { ...(snapshot?.men ?? {}) },
+    women: { ...(snapshot?.women ?? {}) },
+  };
+  persistState();
+  await recompute();
+  updateStatus("Undid the last manual result.");
+}
+
+async function clearManualResults() {
+  const hasManual = Object.keys(state.manualResolved.men).length || Object.keys(state.manualResolved.women).length;
+  if (!hasManual) return;
+  pushManualHistorySnapshot();
+  state.manualResolved = { men: {}, women: {} };
+  persistState();
+  await recompute();
+  updateStatus("Cleared manual results.");
 }
 
 function displayToken(token, context) {
@@ -367,15 +512,44 @@ function displayToken(token, context) {
     .join(" / ");
 }
 
-function renderTeamLine(name, modifier = "") {
+function renderTeamLine(name, modifier = "", options = {}) {
+  if (options.clickable) {
+    return `
+      <button
+        type="button"
+        class="team-line team-pick ${modifier}"
+        data-pick-slot="${options.slot}"
+        data-pick-team="${options.teamId}"
+        data-pick-gender="${options.gender}"
+      >
+        ${name}
+      </button>
+    `;
+  }
   return `<div class="team-line ${modifier}">${name}</div>`;
 }
 
-function renderTeamLineWithLogo(context, teamId, name, modifier = "") {
+function renderTeamLineWithLogo(context, teamId, name, modifier = "", options = {}) {
+  const inner = `
+    ${logoImg(context, teamId, name)}
+    <span>${name}</span>
+  `;
+  if (options.clickable) {
+    return `
+      <button
+        type="button"
+        class="team-line team-pick ${modifier}"
+        data-pick-slot="${options.slot}"
+        data-pick-team="${teamId}"
+        data-pick-gender="${options.gender}"
+      >
+        ${inner}
+      </button>
+    `;
+  }
   return `
     <div class="team-line ${modifier}">
-      ${logoImg(context, teamId, name)}
-      <span>${name}</span>
+      ${inner}
     </div>
   `;
 }
@@ -405,7 +579,8 @@ function bracketLegend() {
   return `
     <div class="bracket-legend">
       <span class="legend-item"><span class="legend-swatch recommended"></span> Root for this team</span>
-      <span class="legend-item"><span class="legend-swatch winner"></span> Already advanced</span>
+      <span class="legend-item"><span class="legend-swatch winner"></span> Official result</span>
+      <span class="legend-item"><span class="legend-swatch manual"></span> Manual result</span>
       <span class="legend-item"><span class="legend-swatch fade"></span> Other side / already lost</span>
     </div>
   `;
@@ -417,43 +592,59 @@ function renderGameCard(slot, context, rowBySlot) {
   const [strong, weak] = pair;
   const row = rowBySlot.get(slot);
   const completedWinner = context.completedSlots.get(slot);
+  const officialWinner = context.baseCompletedSlots?.get(slot);
+  const manualWinner = context.manualCompletedSlots?.get(slot);
 
   let first = displayToken(strong, context);
   let second = displayToken(weak, context);
   let firstClass = "";
   let secondClass = "";
   let badge = "Future";
+  let cardClass = "future";
+  let firstOptions = {};
+  let secondOptions = {};
 
   const knownParticipants = slotParticipantsIfKnown(slot, context, context.completedSlots);
   if (knownParticipants) {
     [first, second] = knownParticipants.map((teamId) => context.teamNameById.get(teamId));
   }
 
-  if (completedWinner != null && knownParticipants) {
-    badge = "Completed";
-    firstClass = knownParticipants[0] === completedWinner ? "winner" : "loser";
-    secondClass = knownParticipants[1] === completedWinner ? "winner" : "loser";
+  if (officialWinner != null && knownParticipants) {
+    badge = "Official";
+    cardClass = "completed";
+    firstClass = knownParticipants[0] === officialWinner ? "winner" : "loser";
+    secondClass = knownParticipants[1] === officialWinner ? "winner" : "loser";
+  } else if (manualWinner != null && knownParticipants) {
+    badge = "Manual result";
+    cardClass = "manual";
+    firstClass = knownParticipants[0] === manualWinner ? "manual-winner" : "loser";
+    secondClass = knownParticipants[1] === manualWinner ? "manual-winner" : "loser";
+    firstOptions = { clickable: true, slot, gender: context.scopeKey, teamId: knownParticipants[0] };
+    secondOptions = { clickable: true, slot, gender: context.scopeKey, teamId: knownParticipants[1] };
   } else if (row) {
     badge = `Root for ${row.cheerForName}`;
+    cardClass = "open";
     firstClass = row.teamA === row.cheerFor ? "recommended" : "fade";
     secondClass = row.teamB === row.cheerFor ? "recommended" : "fade";
+    firstOptions = { clickable: true, slot, gender: context.scopeKey, teamId: knownParticipants[0] };
+    secondOptions = { clickable: true, slot, gender: context.scopeKey, teamId: knownParticipants[1] };
   }
 
   return `
-    <article class="bracket-card ${completedWinner != null ? "completed" : row ? "open" : "future"}">
+    <article class="bracket-card ${cardClass}">
       <div class="bracket-head">
         <span class="slot">${slot}</span>
         <span class="badge">${badge}</span>
       </div>
       ${
         knownParticipants
-          ? renderTeamLineWithLogo(context, knownParticipants[0], first, firstClass)
-          : renderTeamLine(first, firstClass)
+          ? renderTeamLineWithLogo(context, knownParticipants[0], first, firstClass, firstOptions)
+          : renderTeamLine(first, firstClass, firstOptions)
       }
       ${
         knownParticipants
-          ? renderTeamLineWithLogo(context, knownParticipants[1], second, secondClass)
-          : renderTeamLine(second, secondClass)
+          ? renderTeamLineWithLogo(context, knownParticipants[1], second, secondClass, secondOptions)
+          : renderTeamLine(second, secondClass, secondOptions)
       }
     </article>
   `;
@@ -650,8 +841,11 @@ async function recompute() {
     updateStatus("Recomputing…");
     const menMeta = await getMeta("men");
     const womenMeta = await getMeta("women");
-    const menContext = buildContext(menMeta);
-    const womenContext = buildContext(womenMeta);
+    const menBaseContext = buildContext(menMeta);
+    const womenBaseContext = buildContext(womenMeta);
+    const menContext = buildEffectiveContext(menBaseContext, "men");
+    const womenContext = buildEffectiveContext(womenBaseContext, "women");
+    syncManualResolvedFromContexts(menContext, womenContext);
     const benchmarkUploadText = state.uploads.benchmark;
 
     const menOurText = ourUploadText;
@@ -710,6 +904,7 @@ async function recompute() {
         context: menContext,
         ...menAnalysis,
         scope: "men",
+        manualCount: menContext.manualCompletedSlots.size,
         rows: enrichRowsForScope(menAnalysis.rows, menAnalysis, null, menAnalysis.totalGames, "Men"),
       };
     } else if (state.gender === "women") {
@@ -718,6 +913,7 @@ async function recompute() {
         context: womenContext,
         ...womenAnalysis,
         scope: "women",
+        manualCount: womenContext.manualCompletedSlots.size,
         rows: enrichRowsForScope(
           womenAnalysis.rows,
           womenAnalysis,
@@ -746,6 +942,7 @@ async function recompute() {
       view = {
         ...combined,
         scope: "combined",
+        manualCount: menContext.manualCompletedSlots.size + womenContext.manualCompletedSlots.size,
         rows: [...menRows, ...womenRows].sort(
           (a, b) =>
             a.round - b.round ||
@@ -763,7 +960,8 @@ async function recompute() {
     renderSummary(view);
     renderBrackets(view);
     renderTable(view);
-    updateStatus(`Updated using ${state.gender} ${state.metric} mode.`);
+    updateManualControls(view);
+    updateStatus(`Updated using ${state.gender} ${state.metric} mode${view.manualCount ? ` · ${view.manualCount} manual` : ""}.`);
   } catch (error) {
     console.error(error);
     updateStatus(error.message, true);
@@ -834,6 +1032,14 @@ function bindEvents() {
     await recompute();
   });
 
+  els.undoManual.addEventListener("click", async () => {
+    await undoManualResult();
+  });
+
+  els.clearManual.addEventListener("click", async () => {
+    await clearManualResults();
+  });
+
   els.tableWrap.addEventListener("click", (event) => {
     const button = event.target.closest("[data-sort-key]");
     if (!button) return;
@@ -846,6 +1052,16 @@ function bindEvents() {
       state.tableSort = { key, dir: config.defaultDir };
     }
     if (state.currentView) renderTable(state.currentView);
+  });
+
+  els.bracketWrap.addEventListener("click", async (event) => {
+    const button = event.target.closest("[data-pick-slot]");
+    if (!button) return;
+    await setManualWinner(
+      button.dataset.pickGender,
+      button.dataset.pickSlot,
+      Number(button.dataset.pickTeam),
+    );
   });
 }
 
@@ -861,6 +1077,9 @@ async function init() {
     forecastMode: document.querySelector("#forecast-mode"),
     benchmarkSource: document.querySelector("#benchmark-source"),
     benchmarkUploadWrap: document.querySelector("#benchmark-upload-wrap"),
+    manualSummary: document.querySelector("#manual-summary"),
+    undoManual: document.querySelector("#undo-manual"),
+    clearManual: document.querySelector("#clear-manual"),
     weightWrap: document.querySelector("#weight-wrap"),
     weight: document.querySelector("#weight"),
     weightValue: document.querySelector("#weight-value"),
@@ -878,6 +1097,7 @@ async function init() {
 
   state.manifest = await fetchJson("data/manifest.json");
   bindEvents();
+  updateManualControls();
   await recompute();
   if (state.restoredFromStorage && state.uploads.our) {
     updateStatus("Using saved submission from this browser.");
