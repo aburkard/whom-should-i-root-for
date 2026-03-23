@@ -66,6 +66,7 @@ async function fetchJson(path) {
 }
 
 function fmtSigned(value, digits = 4) {
+  if (value == null || Number.isNaN(value)) return "—";
   return `${value >= 0 ? "+" : ""}${value.toFixed(digits)}`;
 }
 
@@ -260,18 +261,18 @@ function renderTable(view) {
     .join("");
 
   els.tableWrap.innerHTML = `
-    <div class="list-card">
-      <div class="section-head">
-        <div>
-          <div class="eyebrow">Largest Brier Swings</div>
-          <h2>Who To Root For</h2>
+    <div class="list-card table-card">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Sorted by Brier Gain</div>
+            <h2>Rooting Guide</h2>
+          </div>
+          <div class="metric-legend">
+          <div><strong>Brier Gain</strong>: expected boost to your final edge if this team wins instead of the other one.</div>
+          <div><strong>Ceiling Swing</strong>: difference in best-case final edge between the two possible winners.</div>
+          <div><strong>Expected Final Brier Edge</strong>: expert-minus-you Brier if this team wins, averaged over the rest of the bracket.</div>
+          </div>
         </div>
-        <div class="metric-legend">
-          <div><strong>Brier Gain</strong>: how much this result improves your expected final Brier edge versus the other winner.</div>
-          <div><strong>Ceiling Swing</strong>: difference in best-case Brier edge between the two winners. Positive favors the team you should root for; negative favors the other side on pure upside.</div>
-          <div><strong>Expected Final Brier Edge</strong>: expected expert-minus-you Brier if this team wins, averaging over the rest of the bracket.</div>
-        </div>
-      </div>
       <div class="table-scroll">
         <table>
           <thead>
@@ -460,7 +461,7 @@ function renderBracket(analysis, context) {
     <section class="list-card bracket-shell">
       <div class="section-head">
         <div>
-          <div class="eyebrow">Bracket View</div>
+          <div class="eyebrow">Live Bracket Board</div>
           <h2>Remaining Bracket</h2>
         </div>
         ${bracketLegend()}
@@ -477,6 +478,7 @@ function renderBracket(analysis, context) {
 
 function renderBracketPanel(title, analysis, context) {
   if (!analysis.rows.length) return "";
+  const displayTitle = title === "Men" ? "Men's" : title === "Women" ? "Women's" : title;
   const rowBySlot = new Map(analysis.rows.map((row) => [row.slot, row]));
   const minRound = Math.min(...analysis.rows.map((row) => row.round));
   const regions = REGION_CONFIG[title.toLowerCase()];
@@ -509,8 +511,8 @@ function renderBracketPanel(title, analysis, context) {
     <section class="list-card bracket-shell">
       <div class="section-head">
         <div>
-          <div class="eyebrow">${title}</div>
-          <h2>${title} Bracket</h2>
+          <div class="eyebrow">${displayTitle}</div>
+          <h2>${displayTitle} Bracket</h2>
         </div>
         ${bracketLegend()}
       </div>
@@ -639,17 +641,18 @@ async function recompute() {
     let view;
     if (state.gender === "men") {
       view = {
-        scope: "men",
         analysis: menAnalysis,
         context: menContext,
-        rows: enrichRowsForScope(menAnalysis.rows, menAnalysis, null, menAnalysis.totalGames, "Men"),
         ...menAnalysis,
+        scope: "men",
+        rows: enrichRowsForScope(menAnalysis.rows, menAnalysis, null, menAnalysis.totalGames, "Men"),
       };
     } else if (state.gender === "women") {
       view = {
-        scope: "women",
         analysis: womenAnalysis,
         context: womenContext,
+        ...womenAnalysis,
+        scope: "women",
         rows: enrichRowsForScope(
           womenAnalysis.rows,
           womenAnalysis,
@@ -657,7 +660,6 @@ async function recompute() {
           womenAnalysis.totalGames,
           "Women",
         ),
-        ...womenAnalysis,
       };
     } else {
       const combined = combineAnalyses(menAnalysis, womenAnalysis);

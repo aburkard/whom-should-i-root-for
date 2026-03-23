@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Spectral:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800&family=Manrope:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/site.css" />
@@ -15,14 +15,40 @@
   <body>
     <main class="page">
       <section class="hero">
-        <div class="eyebrow">2026 Tournament Rooting Guide</div>
-        <h1>Whom Should I Root For?</h1>
-        <p>
-          Upload your submission and compare it with a benchmark to see which
-          remaining results help your Kaggle score most. The default view uses
-          the combined 126 men’s and women’s main-bracket games and updates
-          from the current live bracket state.
-        </p>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">March Machine Learning Mania 2026</div>
+            <h1>Whom Should I Root For?</h1>
+            <p>
+              Upload a submission, compare it with a benchmark, and see which
+              remaining results move your Kaggle Brier the most.
+            </p>
+          </div>
+          <aside class="hero-board" aria-label="Competition summary">
+            <div class="board-row">
+              <span>Scoring</span>
+              <strong>126 main-bracket games</strong>
+            </div>
+            <div class="board-row">
+              <span>Metric</span>
+              <strong>Brier</strong>
+            </div>
+            <div class="board-row">
+              <span>State</span>
+              <strong>Live resolved bracket</strong>
+            </div>
+          </aside>
+        </div>
+        <div class="hero-strip">
+          <a
+            class="hero-cta"
+            href="https://www.kaggle.com/competitions/march-machine-learning-mania-2026/leaderboard"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Kaggle Leaderboard
+          </a>
+        </div>
       </section>
 
       <section class="toolbar">
