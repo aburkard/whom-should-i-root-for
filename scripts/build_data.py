@@ -12,6 +12,7 @@ DEFAULT_SOURCE_ROOT = Path("/Users/aburkard/fun/madness_pyro")
 APP_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = APP_ROOT / "data"
 SEASON = 2026
+LOGO_URL = "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/{espn_id}.png&h=40&w=40"
 
 TEAM_ALIASES = {
     "M": {
@@ -91,13 +92,38 @@ def filter_prediction_csv(src: Path, dst: Path, season: int, valid_team_ids: set
                 writer.writerow({"ID": row["ID"], "Pred": row["Pred"]})
 
 
+def load_logo_crosswalk(source_root: Path, gender: str) -> dict[int, str]:
+    rows = read_csv_rows(source_root / "data" / "kaggle_espn_id_crosswalk.csv")
+    out: dict[int, str] = {}
+    for row in rows:
+        if row["gender"].strip().upper() != gender:
+            continue
+        kaggle_id = int(row["kaggle_id"])
+        espn_raw = row["espn_id"].strip()
+        if not espn_raw:
+            continue
+        espn_id = int(espn_raw)
+        if espn_id <= 0:
+            continue
+        out[kaggle_id] = LOGO_URL.format(espn_id=espn_id)
+    return out
+
+
 def build_gender_bundle(source_root: Path, season: int, gender: str) -> dict[str, object]:
     data_2026 = source_root / "data" / "2026"
     team_rows = [r for r in read_csv_rows(data_2026 / f"{gender}Teams.csv")]
     seed_rows = [r for r in read_csv_rows(data_2026 / f"{gender}NCAATourneySeeds.csv") if int(r["Season"]) == season]
     slot_rows = [r for r in read_csv_rows(data_2026 / f"{gender}NCAATourneySlots.csv") if int(r["Season"]) == season]
 
-    teams = [{"id": int(r["TeamID"]), "name": r["TeamName"]} for r in team_rows]
+    logos = load_logo_crosswalk(source_root, gender)
+    teams = [
+        {
+            "id": int(r["TeamID"]),
+            "name": r["TeamName"],
+            "logoUrl": logos.get(int(r["TeamID"])),
+        }
+        for r in team_rows
+    ]
     valid_ids = {t["id"] for t in teams}
     team_id_by_name = {t["name"]: t["id"] for t in teams}
 

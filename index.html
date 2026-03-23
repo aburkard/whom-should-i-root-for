@@ -18,17 +18,18 @@
         <div class="eyebrow">2026 Tournament Rooting Guide</div>
         <h1>Whom Should I Root For?</h1>
         <p>
-          Upload your submission, compare it to the expert median, and see which
-          remaining winners help your final score most. This MVP uses the live
-          resolved bracket state bundled from the modeling repo and computes the
-          recommendation tree directly in your browser.
+          Upload your submission and compare it with the expert median to see
+          which remaining results help your Kaggle score most. The default view
+          uses the combined 126 men’s and women’s main-bracket games and
+          updates from the current live bracket state.
         </p>
       </section>
 
       <section class="toolbar">
         <div class="toolbar-row">
           <div class="pill-group" aria-label="Gender tabs">
-            <button data-gender="men" data-active="true">Men</button>
+            <button data-gender="combined" data-active="true">Combined</button>
+            <button data-gender="men" data-active="false">Men</button>
             <button data-gender="women" data-active="false">Women</button>
           </div>
 
@@ -76,10 +77,10 @@
 
       <section id="summary"></section>
       <section id="table-wrap"></section>
+      <section id="bracket-wrap"></section>
       <p class="footer-note">
-        Current recommendations are exact for expected edge and Monte Carlo for
-        finish-ahead probability. This MVP compares against one benchmark
-        submission, not a full field model.
+        Scoring uses combined Kaggle Brier over the 126 main-bracket games.
+        First Four games are excluded.
       </p>
     </main>
 

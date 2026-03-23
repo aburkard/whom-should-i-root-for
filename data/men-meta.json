@@ -4,1527 +4,1908 @@
   "teams": [
     {
       "id": 1101,
-      "name": "Abilene Chr"
+      "name": "Abilene Chr",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2000.png&h=40&w=40"
     },
     {
       "id": 1102,
-      "name": "Air Force"
+      "name": "Air Force",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2005.png&h=40&w=40"
     },
     {
       "id": 1103,
-      "name": "Akron"
+      "name": "Akron",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2006.png&h=40&w=40"
     },
     {
       "id": 1104,
-      "name": "Alabama"
+      "name": "Alabama",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/333.png&h=40&w=40"
     },
     {
       "id": 1105,
-      "name": "Alabama A&M"
+      "name": "Alabama A&M",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2010.png&h=40&w=40"
     },
     {
       "id": 1106,
-      "name": "Alabama St"
+      "name": "Alabama St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2011.png&h=40&w=40"
     },
     {
       "id": 1107,
-      "name": "SUNY Albany"
+      "name": "SUNY Albany",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/399.png&h=40&w=40"
     },
     {
       "id": 1108,
-      "name": "Alcorn St"
+      "name": "Alcorn St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2016.png&h=40&w=40"
     },
     {
       "id": 1109,
-      "name": "Alliant Intl"
+      "name": "Alliant Intl",
+      "logoUrl": null
     },
     {
       "id": 1110,
-      "name": "American Univ"
+      "name": "American Univ",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/44.png&h=40&w=40"
     },
     {
       "id": 1111,
-      "name": "Appalachian St"
+      "name": "Appalachian St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2026.png&h=40&w=40"
     },
     {
       "id": 1112,
-      "name": "Arizona"
+      "name": "Arizona",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/12.png&h=40&w=40"
     },
     {
       "id": 1113,
-      "name": "Arizona St"
+      "name": "Arizona St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/9.png&h=40&w=40"
     },
     {
       "id": 1114,
-      "name": "Ark Little Rock"
+      "name": "Ark Little Rock",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2031.png&h=40&w=40"
     },
     {
       "id": 1115,
-      "name": "Ark Pine Bluff"
+      "name": "Ark Pine Bluff",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2029.png&h=40&w=40"
     },
     {
       "id": 1116,
-      "name": "Arkansas"
+      "name": "Arkansas",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/8.png&h=40&w=40"
     },
     {
       "id": 1117,
-      "name": "Arkansas St"
+      "name": "Arkansas St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2032.png&h=40&w=40"
     },
     {
       "id": 1118,
-      "name": "Armstrong St"
+      "name": "Armstrong St",
+      "logoUrl": null
     },
     {
       "id": 1119,
-      "name": "Army"
+      "name": "Army",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/349.png&h=40&w=40"
     },
     {
       "id": 1120,
-      "name": "Auburn"
+      "name": "Auburn",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2.png&h=40&w=40"
     },
     {
       "id": 1121,
-      "name": "Augusta"
+      "name": "Augusta",
+      "logoUrl": null
     },
     {
       "id": 1122,
-      "name": "Austin Peay"
+      "name": "Austin Peay",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2046.png&h=40&w=40"
     },
     {
       "id": 1123,
-      "name": "Ball St"
+      "name": "Ball St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2050.png&h=40&w=40"
     },
     {
       "id": 1124,
-      "name": "Baylor"
+      "name": "Baylor",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/239.png&h=40&w=40"
     },
     {
       "id": 1125,
-      "name": "Belmont"
+      "name": "Belmont",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2057.png&h=40&w=40"
     },
     {
       "id": 1126,
-      "name": "Bethune-Cookman"
+      "name": "Bethune-Cookman",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2065.png&h=40&w=40"
     },
     {
       "id": 1127,
-      "name": "Binghamton"
+      "name": "Binghamton",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2066.png&h=40&w=40"
     },
     {
       "id": 1128,
-      "name": "Birmingham So"
+      "name": "Birmingham So",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/3.png&h=40&w=40"
     },
     {
       "id": 1129,
-      "name": "Boise St"
+      "name": "Boise St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/68.png&h=40&w=40"
     },
     {
       "id": 1130,
-      "name": "Boston College"
+      "name": "Boston College",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/103.png&h=40&w=40"
     },
     {
       "id": 1131,
-      "name": "Boston Univ"
+      "name": "Boston Univ",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/104.png&h=40&w=40"
     },
     {
       "id": 1132,
-      "name": "Bowling Green"
+      "name": "Bowling Green",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/189.png&h=40&w=40"
     },
     {
       "id": 1133,
-      "name": "Bradley"
+      "name": "Bradley",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/71.png&h=40&w=40"
     },
     {
       "id": 1134,
-      "name": "Brooklyn"
+      "name": "Brooklyn",
+      "logoUrl": null
     },
     {
       "id": 1135,
-      "name": "Brown"
+      "name": "Brown",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/225.png&h=40&w=40"
     },
     {
       "id": 1136,
-      "name": "Bryant"
+      "name": "Bryant",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2803.png&h=40&w=40"
     },
     {
       "id": 1137,
-      "name": "Bucknell"
+      "name": "Bucknell",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2083.png&h=40&w=40"
     },
     {
       "id": 1138,
-      "name": "Buffalo"
+      "name": "Buffalo",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2084.png&h=40&w=40"
     },
     {
       "id": 1139,
-      "name": "Butler"
+      "name": "Butler",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2086.png&h=40&w=40"
     },
     {
       "id": 1140,
-      "name": "BYU"
+      "name": "BYU",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/252.png&h=40&w=40"
     },
     {
       "id": 1141,
-      "name": "C Michigan"
+      "name": "C Michigan",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2117.png&h=40&w=40"
     },
     {
       "id": 1142,
-      "name": "Cal Poly"
+      "name": "Cal Poly",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/13.png&h=40&w=40"
     },
     {
       "id": 1143,
-      "name": "California"
+      "name": "California",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/25.png&h=40&w=40"
     },
     {
       "id": 1144,
-      "name": "Campbell"
+      "name": "Campbell",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2097.png&h=40&w=40"
     },
     {
       "id": 1145,
-      "name": "Canisius"
+      "name": "Canisius",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2099.png&h=40&w=40"
     },
     {
       "id": 1146,
-      "name": "Cent Arkansas"
+      "name": "Cent Arkansas",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2110.png&h=40&w=40"
     },
     {
       "id": 1147,
-      "name": "Centenary"
+      "name": "Centenary",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2113.png&h=40&w=40"
     },
     {
       "id": 1148,
-      "name": "Central Conn"
+      "name": "Central Conn",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2115.png&h=40&w=40"
     },
     {
       "id": 1149,
-      "name": "Charleston So"
+      "name": "Charleston So",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2127.png&h=40&w=40"
     },
     {
       "id": 1150,
-      "name": "Charlotte"
+      "name": "Charlotte",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2429.png&h=40&w=40"
     },
     {
       "id": 1151,
-      "name": "Chattanooga"
+      "name": "Chattanooga",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/236.png&h=40&w=40"
     },
     {
       "id": 1152,
-      "name": "Chicago St"
+      "name": "Chicago St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2130.png&h=40&w=40"
     },
     {
       "id": 1153,
-      "name": "Cincinnati"
+      "name": "Cincinnati",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2132.png&h=40&w=40"
     },
     {
       "id": 1154,
-      "name": "Citadel"
+      "name": "Citadel",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2643.png&h=40&w=40"
     },
     {
       "id": 1155,
-      "name": "Clemson"
+      "name": "Clemson",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/228.png&h=40&w=40"
     },
     {
       "id": 1156,
-      "name": "Cleveland St"
+      "name": "Cleveland St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/325.png&h=40&w=40"
     },
     {
       "id": 1157,
-      "name": "Coastal Car"
+      "name": "Coastal Car",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/324.png&h=40&w=40"
     },
     {
       "id": 1158,
-      "name": "Col Charleston"
+      "name": "Col Charleston",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/232.png&h=40&w=40"
     },
     {
       "id": 1159,
-      "name": "Colgate"
+      "name": "Colgate",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2142.png&h=40&w=40"
     },
     {
       "id": 1160,
-      "name": "Colorado"
+      "name": "Colorado",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/38.png&h=40&w=40"
     },
     {
       "id": 1161,
-      "name": "Colorado St"
+      "name": "Colorado St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/36.png&h=40&w=40"
     },
     {
       "id": 1162,
-      "name": "Columbia"
+      "name": "Columbia",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/171.png&h=40&w=40"
     },
     {
       "id": 1163,
-      "name": "Connecticut"
+      "name": "Connecticut",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/41.png&h=40&w=40"
     },
     {
       "id": 1164,
-      "name": "Coppin St"
+      "name": "Coppin St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2154.png&h=40&w=40"
     },
     {
       "id": 1165,
-      "name": "Cornell"
+      "name": "Cornell",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/172.png&h=40&w=40"
     },
     {
       "id": 1166,
-      "name": "Creighton"
+      "name": "Creighton",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/156.png&h=40&w=40"
     },
     {
       "id": 1167,
-      "name": "CS Bakersfield"
+      "name": "CS Bakersfield",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2934.png&h=40&w=40"
     },
     {
       "id": 1168,
-      "name": "CS Fullerton"
+      "name": "CS Fullerton",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2239.png&h=40&w=40"
     },
     {
       "id": 1169,
-      "name": "CS Northridge"
+      "name": "CS Northridge",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2463.png&h=40&w=40"
     },
     {
       "id": 1170,
-      "name": "CS Sacramento"
+      "name": "CS Sacramento",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/16.png&h=40&w=40"
     },
     {
       "id": 1171,
-      "name": "Dartmouth"
+      "name": "Dartmouth",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/159.png&h=40&w=40"
     },
     {
       "id": 1172,
-      "name": "Davidson"
+      "name": "Davidson",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2166.png&h=40&w=40"
     },
     {
       "id": 1173,
-      "name": "Dayton"
+      "name": "Dayton",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2168.png&h=40&w=40"
     },
     {
       "id": 1174,
-      "name": "Delaware"
+      "name": "Delaware",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/48.png&h=40&w=40"
     },
     {
       "id": 1175,
-      "name": "Delaware St"
+      "name": "Delaware St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2169.png&h=40&w=40"
     },
     {
       "id": 1176,
-      "name": "Denver"
+      "name": "Denver",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2172.png&h=40&w=40"
     },
     {
       "id": 1177,
-      "name": "DePaul"
+      "name": "DePaul",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/305.png&h=40&w=40"
     },
     {
       "id": 1178,
-      "name": "Detroit"
+      "name": "Detroit",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2174.png&h=40&w=40"
     },
     {
       "id": 1179,
-      "name": "Drake"
+      "name": "Drake",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2181.png&h=40&w=40"
     },
     {
       "id": 1180,
-      "name": "Drexel"
+      "name": "Drexel",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2182.png&h=40&w=40"
     },
     {
       "id": 1181,
-      "name": "Duke"
+      "name": "Duke",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/150.png&h=40&w=40"
     },
     {
       "id": 1182,
-      "name": "Duquesne"
+      "name": "Duquesne",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2184.png&h=40&w=40"
     },
     {
       "id": 1183,
-      "name": "E Illinois"
+      "name": "E Illinois",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2197.png&h=40&w=40"
     },
     {
       "id": 1184,
-      "name": "E Kentucky"
+      "name": "E Kentucky",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2198.png&h=40&w=40"
     },
     {
       "id": 1185,
-      "name": "E Michigan"
+      "name": "E Michigan",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2199.png&h=40&w=40"
     },
     {
       "id": 1186,
-      "name": "E Washington"
+      "name": "E Washington",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/331.png&h=40&w=40"
     },
     {
       "id": 1187,
-      "name": "East Carolina"
+      "name": "East Carolina",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/151.png&h=40&w=40"
     },
     {
       "id": 1188,
-      "name": "SIUE"
+      "name": "SIUE",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2565.png&h=40&w=40"
     },
     {
       "id": 1189,
-      "name": "Elon"
+      "name": "Elon",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2210.png&h=40&w=40"
     },
     {
       "id": 1190,
-      "name": "ETSU"
+      "name": "ETSU",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2193.png&h=40&w=40"
     },
     {
       "id": 1191,
-      "name": "Evansville"
+      "name": "Evansville",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/339.png&h=40&w=40"
     },
     {
       "id": 1192,
-      "name": "F Dickinson"
+      "name": "F Dickinson",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/161.png&h=40&w=40"
     },
     {
       "id": 1193,
-      "name": "Fairfield"
+      "name": "Fairfield",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2217.png&h=40&w=40"
     },
     {
       "id": 1194,
-      "name": "FL Atlantic"
+      "name": "FL Atlantic",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2226.png&h=40&w=40"
     },
     {
       "id": 1195,
-      "name": "FGCU"
+      "name": "FGCU",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/526.png&h=40&w=40"
     },
     {
       "id": 1196,
-      "name": "Florida"
+      "name": "Florida",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/57.png&h=40&w=40"
     },
     {
       "id": 1197,
-      "name": "Florida A&M"
+      "name": "Florida A&M",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/50.png&h=40&w=40"
     },
     {
       "id": 1198,
-      "name": "Florida Intl"
+      "name": "Florida Intl",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2229.png&h=40&w=40"
     },
     {
       "id": 1199,
-      "name": "Florida St"
+      "name": "Florida St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/52.png&h=40&w=40"
     },
     {
       "id": 1200,
-      "name": "Fordham"
+      "name": "Fordham",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2230.png&h=40&w=40"
     },
     {
       "id": 1201,
-      "name": "Fresno St"
+      "name": "Fresno St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/278.png&h=40&w=40"
     },
     {
       "id": 1202,
-      "name": "Furman"
+      "name": "Furman",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/231.png&h=40&w=40"
     },
     {
       "id": 1203,
-      "name": "G Washington"
+      "name": "G Washington",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/45.png&h=40&w=40"
     },
     {
       "id": 1204,
-      "name": "Ga Southern"
+      "name": "Ga Southern",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/290.png&h=40&w=40"
     },
     {
       "id": 1205,
-      "name": "Gardner Webb"
+      "name": "Gardner Webb",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2241.png&h=40&w=40"
     },
     {
       "id": 1206,
-      "name": "George Mason"
+      "name": "George Mason",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2244.png&h=40&w=40"
     },
     {
       "id": 1207,
-      "name": "Georgetown"
+      "name": "Georgetown",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/46.png&h=40&w=40"
     },
     {
       "id": 1208,
-      "name": "Georgia"
+      "name": "Georgia",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/61.png&h=40&w=40"
     },
     {
       "id": 1209,
-      "name": "Georgia St"
+      "name": "Georgia St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2247.png&h=40&w=40"
     },
     {
       "id": 1210,
-      "name": "Georgia Tech"
+      "name": "Georgia Tech",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/59.png&h=40&w=40"
     },
     {
       "id": 1211,
-      "name": "Gonzaga"
+      "name": "Gonzaga",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2250.png&h=40&w=40"
     },
     {
       "id": 1212,
-      "name": "Grambling"
+      "name": "Grambling",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2755.png&h=40&w=40"
     },
     {
       "id": 1213,
-      "name": "Grand Canyon"
+      "name": "Grand Canyon",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2253.png&h=40&w=40"
     },
     {
       "id": 1214,
-      "name": "Hampton"
+      "name": "Hampton",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2261.png&h=40&w=40"
     },
     {
       "id": 1215,
-      "name": "Hardin-Simmons"
+      "name": "Hardin-Simmons",
+      "logoUrl": null
     },
     {
       "id": 1216,
-      "name": "Hartford"
+      "name": "Hartford",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/42.png&h=40&w=40"
     },
     {
       "id": 1217,
-      "name": "Harvard"
+      "name": "Harvard",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/108.png&h=40&w=40"
     },
     {
       "id": 1218,
-      "name": "Hawaii"
+      "name": "Hawaii",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/62.png&h=40&w=40"
     },
     {
       "id": 1219,
-      "name": "High Point"
+      "name": "High Point",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2272.png&h=40&w=40"
     },
     {
       "id": 1220,
-      "name": "Hofstra"
+      "name": "Hofstra",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2275.png&h=40&w=40"
     },
     {
       "id": 1221,
-      "name": "Holy Cross"
+      "name": "Holy Cross",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/107.png&h=40&w=40"
     },
     {
       "id": 1222,
-      "name": "Houston"
+      "name": "Houston",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/248.png&h=40&w=40"
     },
     {
       "id": 1223,
-      "name": "Houston Chr"
+      "name": "Houston Chr",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2277.png&h=40&w=40"
     },
     {
       "id": 1224,
-      "name": "Howard"
+      "name": "Howard",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/47.png&h=40&w=40"
     },
     {
       "id": 1225,
-      "name": "Idaho"
+      "name": "Idaho",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/70.png&h=40&w=40"
     },
     {
       "id": 1226,
-      "name": "Idaho St"
+      "name": "Idaho St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/304.png&h=40&w=40"
     },
     {
       "id": 1227,
-      "name": "IL Chicago"
+      "name": "IL Chicago",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/82.png&h=40&w=40"
     },
     {
       "id": 1228,
-      "name": "Illinois"
+      "name": "Illinois",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/356.png&h=40&w=40"
     },
     {
       "id": 1229,
-      "name": "Illinois St"
+      "name": "Illinois St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2287.png&h=40&w=40"
     },
     {
       "id": 1230,
-      "name": "Incarnate Word"
+      "name": "Incarnate Word",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2916.png&h=40&w=40"
     },
     {
       "id": 1231,
-      "name": "Indiana"
+      "name": "Indiana",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/84.png&h=40&w=40"
     },
     {
       "id": 1232,
-      "name": "Indiana St"
+      "name": "Indiana St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/282.png&h=40&w=40"
     },
     {
       "id": 1233,
-      "name": "Iona"
+      "name": "Iona",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/314.png&h=40&w=40"
     },
     {
       "id": 1234,
-      "name": "Iowa"
+      "name": "Iowa",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2294.png&h=40&w=40"
     },
     {
       "id": 1235,
-      "name": "Iowa St"
+      "name": "Iowa St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/66.png&h=40&w=40"
     },
     {
       "id": 1236,
-      "name": "PFW"
+      "name": "PFW",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2870.png&h=40&w=40"
     },
     {
       "id": 1237,
-      "name": "IUPUI"
+      "name": "IUPUI",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/85.png&h=40&w=40"
     },
     {
       "id": 1238,
-      "name": "Jackson St"
+      "name": "Jackson St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2296.png&h=40&w=40"
     },
     {
       "id": 1239,
-      "name": "Jacksonville"
+      "name": "Jacksonville",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/294.png&h=40&w=40"
     },
     {
       "id": 1240,
-      "name": "Jacksonville St"
+      "name": "Jacksonville St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/55.png&h=40&w=40"
     },
     {
       "id": 1241,
-      "name": "James Madison"
+      "name": "James Madison",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/256.png&h=40&w=40"
     },
     {
       "id": 1242,
-      "name": "Kansas"
+      "name": "Kansas",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2305.png&h=40&w=40"
     },
     {
       "id": 1243,
-      "name": "Kansas St"
+      "name": "Kansas St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2306.png&h=40&w=40"
     },
     {
       "id": 1244,
-      "name": "Kennesaw"
+      "name": "Kennesaw",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/338.png&h=40&w=40"
     },
     {
       "id": 1245,
-      "name": "Kent"
+      "name": "Kent",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2309.png&h=40&w=40"
     },
     {
       "id": 1246,
-      "name": "Kentucky"
+      "name": "Kentucky",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/96.png&h=40&w=40"
     },
     {
       "id": 1247,
-      "name": "La Salle"
+      "name": "La Salle",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2325.png&h=40&w=40"
     },
     {
       "id": 1248,
-      "name": "Lafayette"
+      "name": "Lafayette",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/322.png&h=40&w=40"
     },
     {
       "id": 1249,
-      "name": "Lamar"
+      "name": "Lamar",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2320.png&h=40&w=40"
     },
     {
       "id": 1250,
-      "name": "Lehigh"
+      "name": "Lehigh",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2329.png&h=40&w=40"
     },
     {
       "id": 1251,
-      "name": "Liberty"
+      "name": "Liberty",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2335.png&h=40&w=40"
     },
     {
       "id": 1252,
-      "name": "Lipscomb"
+      "name": "Lipscomb",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/288.png&h=40&w=40"
     },
     {
       "id": 1253,
-      "name": "Long Beach St"
+      "name": "Long Beach St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/299.png&h=40&w=40"
     },
     {
       "id": 1254,
-      "name": "LIU Brooklyn"
+      "name": "LIU Brooklyn",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/112358.png&h=40&w=40"
     },
     {
       "id": 1255,
-      "name": "Longwood"
+      "name": "Longwood",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2344.png&h=40&w=40"
     },
     {
       "id": 1256,
-      "name": "Louisiana Tech"
+      "name": "Louisiana Tech",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2348.png&h=40&w=40"
     },
     {
       "id": 1257,
-      "name": "Louisville"
+      "name": "Louisville",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/97.png&h=40&w=40"
     },
     {
       "id": 1258,
-      "name": "Loy Marymount"
+      "name": "Loy Marymount",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2351.png&h=40&w=40"
     },
     {
       "id": 1259,
-      "name": "Loyola MD"
+      "name": "Loyola MD",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2352.png&h=40&w=40"
     },
     {
       "id": 1260,
-      "name": "Loyola-Chicago"
+      "name": "Loyola-Chicago",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2350.png&h=40&w=40"
     },
     {
       "id": 1261,
-      "name": "LSU"
+      "name": "LSU",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/99.png&h=40&w=40"
     },
     {
       "id": 1262,
-      "name": "MA Lowell"
+      "name": "MA Lowell",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2349.png&h=40&w=40"
     },
     {
       "id": 1263,
-      "name": "Maine"
+      "name": "Maine",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/311.png&h=40&w=40"
     },
     {
       "id": 1264,
-      "name": "Manhattan"
+      "name": "Manhattan",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2363.png&h=40&w=40"
     },
     {
       "id": 1265,
-      "name": "Marist"
+      "name": "Marist",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2368.png&h=40&w=40"
     },
     {
       "id": 1266,
-      "name": "Marquette"
+      "name": "Marquette",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/269.png&h=40&w=40"
     },
     {
       "id": 1267,
-      "name": "Marshall"
+      "name": "Marshall",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/276.png&h=40&w=40"
     },
     {
       "id": 1268,
-      "name": "Maryland"
+      "name": "Maryland",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/120.png&h=40&w=40"
     },
     {
       "id": 1269,
-      "name": "Massachusetts"
+      "name": "Massachusetts",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/113.png&h=40&w=40"
     },
     {
       "id": 1270,
-      "name": "McNeese St"
+      "name": "McNeese St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2377.png&h=40&w=40"
     },
     {
       "id": 1271,
-      "name": "MD E Shore"
+      "name": "MD E Shore",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2379.png&h=40&w=40"
     },
     {
       "id": 1272,
-      "name": "Memphis"
+      "name": "Memphis",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/235.png&h=40&w=40"
     },
     {
       "id": 1273,
-      "name": "Mercer"
+      "name": "Mercer",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2382.png&h=40&w=40"
     },
     {
       "id": 1274,
-      "name": "Miami FL"
+      "name": "Miami FL",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2390.png&h=40&w=40"
     },
     {
       "id": 1275,
-      "name": "Miami OH"
+      "name": "Miami OH",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/193.png&h=40&w=40"
     },
     {
       "id": 1276,
-      "name": "Michigan"
+      "name": "Michigan",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/130.png&h=40&w=40"
     },
     {
       "id": 1277,
-      "name": "Michigan St"
+      "name": "Michigan St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/127.png&h=40&w=40"
     },
     {
       "id": 1278,
-      "name": "Minnesota"
+      "name": "Minnesota",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/135.png&h=40&w=40"
     },
     {
       "id": 1279,
-      "name": "Mississippi"
+      "name": "Mississippi",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/145.png&h=40&w=40"
     },
     {
       "id": 1280,
-      "name": "Mississippi St"
+      "name": "Mississippi St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/344.png&h=40&w=40"
     },
     {
       "id": 1281,
-      "name": "Missouri"
+      "name": "Missouri",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/142.png&h=40&w=40"
     },
     {
       "id": 1282,
-      "name": "Missouri KC"
+      "name": "Missouri KC",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/140.png&h=40&w=40"
     },
     {
       "id": 1283,
-      "name": "Missouri St"
+      "name": "Missouri St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2623.png&h=40&w=40"
     },
     {
       "id": 1284,
-      "name": "Monmouth NJ"
+      "name": "Monmouth NJ",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2405.png&h=40&w=40"
     },
     {
       "id": 1285,
-      "name": "Montana"
+      "name": "Montana",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/149.png&h=40&w=40"
     },
     {
       "id": 1286,
-      "name": "Montana St"
+      "name": "Montana St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/147.png&h=40&w=40"
     },
     {
       "id": 1287,
-      "name": "Morehead St"
+      "name": "Morehead St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2413.png&h=40&w=40"
     },
     {
       "id": 1288,
-      "name": "Morgan St"
+      "name": "Morgan St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2415.png&h=40&w=40"
     },
     {
       "id": 1289,
-      "name": "Morris Brown"
+      "name": "Morris Brown",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2417.png&h=40&w=40"
     },
     {
       "id": 1290,
-      "name": "MS Valley St"
+      "name": "MS Valley St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2400.png&h=40&w=40"
     },
     {
       "id": 1291,
-      "name": "Mt St Mary's"
+      "name": "Mt St Mary's",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/116.png&h=40&w=40"
     },
     {
       "id": 1292,
-      "name": "MTSU"
+      "name": "MTSU",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2393.png&h=40&w=40"
     },
     {
       "id": 1293,
-      "name": "Murray St"
+      "name": "Murray St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/93.png&h=40&w=40"
     },
     {
       "id": 1294,
-      "name": "N Colorado"
+      "name": "N Colorado",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2458.png&h=40&w=40"
     },
     {
       "id": 1295,
-      "name": "N Dakota St"
+      "name": "N Dakota St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2449.png&h=40&w=40"
     },
     {
       "id": 1296,
-      "name": "N Illinois"
+      "name": "N Illinois",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2459.png&h=40&w=40"
     },
     {
       "id": 1297,
-      "name": "N Kentucky"
+      "name": "N Kentucky",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/94.png&h=40&w=40"
     },
     {
       "id": 1298,
-      "name": "Navy"
+      "name": "Navy",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2426.png&h=40&w=40"
     },
     {
       "id": 1299,
-      "name": "NC A&T"
+      "name": "NC A&T",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2448.png&h=40&w=40"
     },
     {
       "id": 1300,
-      "name": "NC Central"
+      "name": "NC Central",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2428.png&h=40&w=40"
     },
     {
       "id": 1301,
-      "name": "NC State"
+      "name": "NC State",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/152.png&h=40&w=40"
     },
     {
       "id": 1302,
-      "name": "NE Illinois"
+      "name": "NE Illinois",
+      "logoUrl": null
     },
     {
       "id": 1303,
-      "name": "NE Omaha"
+      "name": "NE Omaha",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2437.png&h=40&w=40"
     },
     {
       "id": 1304,
-      "name": "Nebraska"
+      "name": "Nebraska",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/158.png&h=40&w=40"
     },
     {
       "id": 1305,
-      "name": "Nevada"
+      "name": "Nevada",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2440.png&h=40&w=40"
     },
     {
       "id": 1306,
-      "name": "New Hampshire"
+      "name": "New Hampshire",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/160.png&h=40&w=40"
     },
     {
       "id": 1307,
-      "name": "New Mexico"
+      "name": "New Mexico",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/167.png&h=40&w=40"
     },
     {
       "id": 1308,
-      "name": "New Mexico St"
+      "name": "New Mexico St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/166.png&h=40&w=40"
     },
     {
       "id": 1309,
-      "name": "New Orleans"
+      "name": "New Orleans",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2443.png&h=40&w=40"
     },
     {
       "id": 1310,
-      "name": "Niagara"
+      "name": "Niagara",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/315.png&h=40&w=40"
     },
     {
       "id": 1311,
-      "name": "Nicholls St"
+      "name": "Nicholls St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2447.png&h=40&w=40"
     },
     {
       "id": 1312,
-      "name": "NJIT"
+      "name": "NJIT",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2885.png&h=40&w=40"
     },
     {
       "id": 1313,
-      "name": "Norfolk St"
+      "name": "Norfolk St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2450.png&h=40&w=40"
     },
     {
       "id": 1314,
-      "name": "North Carolina"
+      "name": "North Carolina",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/153.png&h=40&w=40"
     },
     {
       "id": 1315,
-      "name": "North Dakota"
+      "name": "North Dakota",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/155.png&h=40&w=40"
     },
     {
       "id": 1316,
-      "name": "North Florida"
+      "name": "North Florida",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2454.png&h=40&w=40"
     },
     {
       "id": 1317,
-      "name": "North Texas"
+      "name": "North Texas",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/249.png&h=40&w=40"
     },
     {
       "id": 1318,
-      "name": "Northeastern"
+      "name": "Northeastern",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/111.png&h=40&w=40"
     },
     {
       "id": 1319,
-      "name": "Northern Arizona"
+      "name": "Northern Arizona",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2464.png&h=40&w=40"
     },
     {
       "id": 1320,
-      "name": "Northern Iowa"
+      "name": "Northern Iowa",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2460.png&h=40&w=40"
     },
     {
       "id": 1321,
-      "name": "Northwestern"
+      "name": "Northwestern",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/77.png&h=40&w=40"
     },
     {
       "id": 1322,
-      "name": "Northwestern LA"
+      "name": "Northwestern LA",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2466.png&h=40&w=40"
     },
     {
       "id": 1323,
-      "name": "Notre Dame"
+      "name": "Notre Dame",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/87.png&h=40&w=40"
     },
     {
       "id": 1324,
-      "name": "Oakland"
+      "name": "Oakland",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2473.png&h=40&w=40"
     },
     {
       "id": 1325,
-      "name": "Ohio"
+      "name": "Ohio",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=40&w=40"
     },
     {
       "id": 1326,
-      "name": "Ohio St"
+      "name": "Ohio St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/194.png&h=40&w=40"
     },
     {
       "id": 1327,
-      "name": "Okla City"
+      "name": "Okla City",
+      "logoUrl": null
     },
     {
       "id": 1328,
-      "name": "Oklahoma"
+      "name": "Oklahoma",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/201.png&h=40&w=40"
     },
     {
       "id": 1329,
-      "name": "Oklahoma St"
+      "name": "Oklahoma St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/197.png&h=40&w=40"
     },
     {
       "id": 1330,
-      "name": "Old Dominion"
+      "name": "Old Dominion",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/295.png&h=40&w=40"
     },
     {
       "id": 1331,
-      "name": "Oral Roberts"
+      "name": "Oral Roberts",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/198.png&h=40&w=40"
     },
     {
       "id": 1332,
-      "name": "Oregon"
+      "name": "Oregon",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2483.png&h=40&w=40"
     },
     {
       "id": 1333,
-      "name": "Oregon St"
+      "name": "Oregon St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/204.png&h=40&w=40"
     },
     {
       "id": 1334,
-      "name": "Pacific"
+      "name": "Pacific",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/279.png&h=40&w=40"
     },
     {
       "id": 1335,
-      "name": "Penn"
+      "name": "Penn",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/219.png&h=40&w=40"
     },
     {
       "id": 1336,
-      "name": "Penn St"
+      "name": "Penn St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/213.png&h=40&w=40"
     },
     {
       "id": 1337,
-      "name": "Pepperdine"
+      "name": "Pepperdine",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2492.png&h=40&w=40"
     },
     {
       "id": 1338,
-      "name": "Pittsburgh"
+      "name": "Pittsburgh",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/221.png&h=40&w=40"
     },
     {
       "id": 1339,
-      "name": "Portland"
+      "name": "Portland",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2501.png&h=40&w=40"
     },
     {
       "id": 1340,
-      "name": "Portland St"
+      "name": "Portland St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2502.png&h=40&w=40"
     },
     {
       "id": 1341,
-      "name": "Prairie View"
+      "name": "Prairie View",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2504.png&h=40&w=40"
     },
     {
       "id": 1342,
-      "name": "Presbyterian"
+      "name": "Presbyterian",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2506.png&h=40&w=40"
     },
     {
       "id": 1343,
-      "name": "Princeton"
+      "name": "Princeton",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/163.png&h=40&w=40"
     },
     {
       "id": 1344,
-      "name": "Providence"
+      "name": "Providence",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2507.png&h=40&w=40"
     },
     {
       "id": 1345,
-      "name": "Purdue"
+      "name": "Purdue",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2509.png&h=40&w=40"
     },
     {
       "id": 1346,
-      "name": "Quinnipiac"
+      "name": "Quinnipiac",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2514.png&h=40&w=40"
     },
     {
       "id": 1347,
-      "name": "Radford"
+      "name": "Radford",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2515.png&h=40&w=40"
     },
     {
       "id": 1348,
-      "name": "Rhode Island"
+      "name": "Rhode Island",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/227.png&h=40&w=40"
     },
     {
       "id": 1349,
-      "name": "Rice"
+      "name": "Rice",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/242.png&h=40&w=40"
     },
     {
       "id": 1350,
-      "name": "Richmond"
+      "name": "Richmond",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/257.png&h=40&w=40"
     },
     {
       "id": 1351,
-      "name": "Rider"
+      "name": "Rider",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2520.png&h=40&w=40"
     },
     {
       "id": 1352,
-      "name": "Robert Morris"
+      "name": "Robert Morris",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2523.png&h=40&w=40"
     },
     {
       "id": 1353,
-      "name": "Rutgers"
+      "name": "Rutgers",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/164.png&h=40&w=40"
     },
     {
       "id": 1354,
-      "name": "S Carolina St"
+      "name": "S Carolina St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2569.png&h=40&w=40"
     },
     {
       "id": 1355,
-      "name": "S Dakota St"
+      "name": "S Dakota St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2571.png&h=40&w=40"
     },
     {
       "id": 1356,
-      "name": "S Illinois"
+      "name": "S Illinois",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/79.png&h=40&w=40"
     },
     {
       "id": 1357,
-      "name": "Sacred Heart"
+      "name": "Sacred Heart",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2529.png&h=40&w=40"
     },
     {
       "id": 1358,
-      "name": "Sam Houston St"
+      "name": "Sam Houston St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2534.png&h=40&w=40"
     },
     {
       "id": 1359,
-      "name": "Samford"
+      "name": "Samford",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2535.png&h=40&w=40"
     },
     {
       "id": 1360,
-      "name": "San Diego"
+      "name": "San Diego",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/301.png&h=40&w=40"
     },
     {
       "id": 1361,
-      "name": "San Diego St"
+      "name": "San Diego St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/21.png&h=40&w=40"
     },
     {
       "id": 1362,
-      "name": "San Francisco"
+      "name": "San Francisco",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2539.png&h=40&w=40"
     },
     {
       "id": 1363,
-      "name": "San Jose St"
+      "name": "San Jose St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/23.png&h=40&w=40"
     },
     {
       "id": 1364,
-      "name": "UC Santa Barbara"
+      "name": "UC Santa Barbara",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2540.png&h=40&w=40"
     },
     {
       "id": 1365,
-      "name": "Santa Clara"
+      "name": "Santa Clara",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2541.png&h=40&w=40"
     },
     {
       "id": 1366,
-      "name": "Savannah St"
+      "name": "Savannah St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2542.png&h=40&w=40"
     },
     {
       "id": 1367,
-      "name": "SC Upstate"
+      "name": "SC Upstate",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2908.png&h=40&w=40"
     },
     {
       "id": 1368,
-      "name": "SE Louisiana"
+      "name": "SE Louisiana",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2545.png&h=40&w=40"
     },
     {
       "id": 1369,
-      "name": "SE Missouri St"
+      "name": "SE Missouri St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2546.png&h=40&w=40"
     },
     {
       "id": 1370,
-      "name": "Seattle"
+      "name": "Seattle",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2547.png&h=40&w=40"
     },
     {
       "id": 1371,
-      "name": "Seton Hall"
+      "name": "Seton Hall",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2550.png&h=40&w=40"
     },
     {
       "id": 1372,
-      "name": "SF Austin"
+      "name": "SF Austin",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2617.png&h=40&w=40"
     },
     {
       "id": 1373,
-      "name": "Siena"
+      "name": "Siena",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2561.png&h=40&w=40"
     },
     {
       "id": 1374,
-      "name": "SMU"
+      "name": "SMU",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2567.png&h=40&w=40"
     },
     {
       "id": 1375,
-      "name": "South Alabama"
+      "name": "South Alabama",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/6.png&h=40&w=40"
     },
     {
       "id": 1376,
-      "name": "South Carolina"
+      "name": "South Carolina",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2579.png&h=40&w=40"
     },
     {
       "id": 1377,
-      "name": "South Dakota"
+      "name": "South Dakota",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/233.png&h=40&w=40"
     },
     {
       "id": 1378,
-      "name": "South Florida"
+      "name": "South Florida",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/58.png&h=40&w=40"
     },
     {
       "id": 1379,
-      "name": "Southern Miss"
+      "name": "Southern Miss",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2572.png&h=40&w=40"
     },
     {
       "id": 1380,
-      "name": "Southern Univ"
+      "name": "Southern Univ",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2582.png&h=40&w=40"
     },
     {
       "id": 1381,
-      "name": "Southern Utah"
+      "name": "Southern Utah",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/253.png&h=40&w=40"
     },
     {
       "id": 1382,
-      "name": "St Bonaventure"
+      "name": "St Bonaventure",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/179.png&h=40&w=40"
     },
     {
       "id": 1383,
-      "name": "St Francis NY"
+      "name": "St Francis NY",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2597.png&h=40&w=40"
     },
     {
       "id": 1384,
-      "name": "St Francis PA"
+      "name": "St Francis PA",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2598.png&h=40&w=40"
     },
     {
       "id": 1385,
-      "name": "St John's"
+      "name": "St John's",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2599.png&h=40&w=40"
     },
     {
       "id": 1386,
-      "name": "St Joseph's PA"
+      "name": "St Joseph's PA",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2603.png&h=40&w=40"
     },
     {
       "id": 1387,
-      "name": "St Louis"
+      "name": "St Louis",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/139.png&h=40&w=40"
     },
     {
       "id": 1388,
-      "name": "St Mary's CA"
+      "name": "St Mary's CA",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2608.png&h=40&w=40"
     },
     {
       "id": 1389,
-      "name": "St Peter's"
+      "name": "St Peter's",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2612.png&h=40&w=40"
     },
     {
       "id": 1390,
-      "name": "Stanford"
+      "name": "Stanford",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/24.png&h=40&w=40"
     },
     {
       "id": 1391,
-      "name": "Stetson"
+      "name": "Stetson",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/56.png&h=40&w=40"
     },
     {
       "id": 1392,
-      "name": "Stony Brook"
+      "name": "Stony Brook",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2619.png&h=40&w=40"
     },
     {
       "id": 1393,
-      "name": "Syracuse"
+      "name": "Syracuse",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/183.png&h=40&w=40"
     },
     {
       "id": 1394,
-      "name": "TAM C. Christi"
+      "name": "TAM C. Christi",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/357.png&h=40&w=40"
     },
     {
       "id": 1395,
-      "name": "TCU"
+      "name": "TCU",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2628.png&h=40&w=40"
     },
     {
       "id": 1396,
-      "name": "Temple"
+      "name": "Temple",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/218.png&h=40&w=40"
     },
     {
       "id": 1397,
-      "name": "Tennessee"
+      "name": "Tennessee",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2633.png&h=40&w=40"
     },
     {
       "id": 1398,
-      "name": "Tennessee St"
+      "name": "Tennessee St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2634.png&h=40&w=40"
     },
     {
       "id": 1399,
-      "name": "Tennessee Tech"
+      "name": "Tennessee Tech",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2635.png&h=40&w=40"
     },
     {
       "id": 1400,
-      "name": "Texas"
+      "name": "Texas",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/251.png&h=40&w=40"
     },
     {
       "id": 1401,
-      "name": "Texas A&M"
+      "name": "Texas A&M",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/245.png&h=40&w=40"
     },
     {
       "id": 1402,
-      "name": "Texas St"
+      "name": "Texas St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/326.png&h=40&w=40"
     },
     {
       "id": 1403,
-      "name": "Texas Tech"
+      "name": "Texas Tech",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2641.png&h=40&w=40"
     },
     {
       "id": 1404,
-      "name": "TN Martin"
+      "name": "TN Martin",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2630.png&h=40&w=40"
     },
     {
       "id": 1405,
-      "name": "Toledo"
+      "name": "Toledo",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2649.png&h=40&w=40"
     },
     {
       "id": 1406,
-      "name": "Towson"
+      "name": "Towson",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/119.png&h=40&w=40"
     },
     {
       "id": 1407,
-      "name": "Troy"
+      "name": "Troy",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2653.png&h=40&w=40"
     },
     {
       "id": 1408,
-      "name": "Tulane"
+      "name": "Tulane",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2655.png&h=40&w=40"
     },
     {
       "id": 1409,
-      "name": "Tulsa"
+      "name": "Tulsa",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/202.png&h=40&w=40"
     },
     {
       "id": 1410,
-      "name": "UTRGV"
+      "name": "UTRGV",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/292.png&h=40&w=40"
     },
     {
       "id": 1411,
-      "name": "TX Southern"
+      "name": "TX Southern",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2640.png&h=40&w=40"
     },
     {
       "id": 1412,
-      "name": "UAB"
+      "name": "UAB",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/5.png&h=40&w=40"
     },
     {
       "id": 1413,
-      "name": "UC Davis"
+      "name": "UC Davis",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/302.png&h=40&w=40"
     },
     {
       "id": 1414,
-      "name": "UC Irvine"
+      "name": "UC Irvine",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/300.png&h=40&w=40"
     },
     {
       "id": 1415,
-      "name": "UC Riverside"
+      "name": "UC Riverside",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/27.png&h=40&w=40"
     },
     {
       "id": 1416,
-      "name": "UCF"
+      "name": "UCF",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2116.png&h=40&w=40"
     },
     {
       "id": 1417,
-      "name": "UCLA"
+      "name": "UCLA",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/26.png&h=40&w=40"
     },
     {
       "id": 1418,
-      "name": "Louisiana"
+      "name": "Louisiana",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/309.png&h=40&w=40"
     },
     {
       "id": 1419,
-      "name": "ULM"
+      "name": "ULM",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2433.png&h=40&w=40"
     },
     {
       "id": 1420,
-      "name": "UMBC"
+      "name": "UMBC",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2378.png&h=40&w=40"
     },
     {
       "id": 1421,
-      "name": "UNC Asheville"
+      "name": "UNC Asheville",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2427.png&h=40&w=40"
     },
     {
       "id": 1422,
-      "name": "UNC Greensboro"
+      "name": "UNC Greensboro",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2430.png&h=40&w=40"
     },
     {
       "id": 1423,
-      "name": "UNC Wilmington"
+      "name": "UNC Wilmington",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/350.png&h=40&w=40"
     },
     {
       "id": 1424,
-      "name": "UNLV"
+      "name": "UNLV",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2439.png&h=40&w=40"
     },
     {
       "id": 1425,
-      "name": "USC"
+      "name": "USC",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/30.png&h=40&w=40"
     },
     {
       "id": 1426,
-      "name": "UT Arlington"
+      "name": "UT Arlington",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/250.png&h=40&w=40"
     },
     {
       "id": 1427,
-      "name": "UT San Antonio"
+      "name": "UT San Antonio",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2636.png&h=40&w=40"
     },
     {
       "id": 1428,
-      "name": "Utah"
+      "name": "Utah",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/254.png&h=40&w=40"
     },
     {
       "id": 1429,
-      "name": "Utah St"
+      "name": "Utah St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/328.png&h=40&w=40"
     },
     {
       "id": 1430,
-      "name": "Utah Valley"
+      "name": "Utah Valley",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/3084.png&h=40&w=40"
     },
     {
       "id": 1431,
-      "name": "UTEP"
+      "name": "UTEP",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2638.png&h=40&w=40"
     },
     {
       "id": 1432,
-      "name": "Utica"
+      "name": "Utica",
+      "logoUrl": null
     },
     {
       "id": 1433,
-      "name": "VCU"
+      "name": "VCU",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2670.png&h=40&w=40"
     },
     {
       "id": 1434,
-      "name": "Valparaiso"
+      "name": "Valparaiso",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2674.png&h=40&w=40"
     },
     {
       "id": 1435,
-      "name": "Vanderbilt"
+      "name": "Vanderbilt",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/238.png&h=40&w=40"
     },
     {
       "id": 1436,
-      "name": "Vermont"
+      "name": "Vermont",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/261.png&h=40&w=40"
     },
     {
       "id": 1437,
-      "name": "Villanova"
+      "name": "Villanova",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/222.png&h=40&w=40"
     },
     {
       "id": 1438,
-      "name": "Virginia"
+      "name": "Virginia",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/258.png&h=40&w=40"
     },
     {
       "id": 1439,
-      "name": "Virginia Tech"
+      "name": "Virginia Tech",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/259.png&h=40&w=40"
     },
     {
       "id": 1440,
-      "name": "VMI"
+      "name": "VMI",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2678.png&h=40&w=40"
     },
     {
       "id": 1441,
-      "name": "W Carolina"
+      "name": "W Carolina",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2717.png&h=40&w=40"
     },
     {
       "id": 1442,
-      "name": "W Illinois"
+      "name": "W Illinois",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2710.png&h=40&w=40"
     },
     {
       "id": 1443,
-      "name": "WKU"
+      "name": "WKU",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/98.png&h=40&w=40"
     },
     {
       "id": 1444,
-      "name": "W Michigan"
+      "name": "W Michigan",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2711.png&h=40&w=40"
     },
     {
       "id": 1445,
-      "name": "W Salem St"
+      "name": "W Salem St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2736.png&h=40&w=40"
     },
     {
       "id": 1446,
-      "name": "W Texas A&M"
+      "name": "W Texas A&M",
+      "logoUrl": null
     },
     {
       "id": 1447,
-      "name": "Wagner"
+      "name": "Wagner",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2681.png&h=40&w=40"
     },
     {
       "id": 1448,
-      "name": "Wake Forest"
+      "name": "Wake Forest",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/154.png&h=40&w=40"
     },
     {
       "id": 1449,
-      "name": "Washington"
+      "name": "Washington",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/264.png&h=40&w=40"
     },
     {
       "id": 1450,
-      "name": "Washington St"
+      "name": "Washington St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/265.png&h=40&w=40"
     },
     {
       "id": 1451,
-      "name": "Weber St"
+      "name": "Weber St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2692.png&h=40&w=40"
     },
     {
       "id": 1452,
-      "name": "West Virginia"
+      "name": "West Virginia",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/277.png&h=40&w=40"
     },
     {
       "id": 1453,
-      "name": "WI Green Bay"
+      "name": "WI Green Bay",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2739.png&h=40&w=40"
     },
     {
       "id": 1454,
-      "name": "WI Milwaukee"
+      "name": "WI Milwaukee",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/270.png&h=40&w=40"
     },
     {
       "id": 1455,
-      "name": "Wichita St"
+      "name": "Wichita St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2724.png&h=40&w=40"
     },
     {
       "id": 1456,
-      "name": "William & Mary"
+      "name": "William & Mary",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2729.png&h=40&w=40"
     },
     {
       "id": 1457,
-      "name": "Winthrop"
+      "name": "Winthrop",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2737.png&h=40&w=40"
     },
     {
       "id": 1458,
-      "name": "Wisconsin"
+      "name": "Wisconsin",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/275.png&h=40&w=40"
     },
     {
       "id": 1459,
-      "name": "Wofford"
+      "name": "Wofford",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2747.png&h=40&w=40"
     },
     {
       "id": 1460,
-      "name": "Wright St"
+      "name": "Wright St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2750.png&h=40&w=40"
     },
     {
       "id": 1461,
-      "name": "Wyoming"
+      "name": "Wyoming",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2751.png&h=40&w=40"
     },
     {
       "id": 1462,
-      "name": "Xavier"
+      "name": "Xavier",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2752.png&h=40&w=40"
     },
     {
       "id": 1463,
-      "name": "Yale"
+      "name": "Yale",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/43.png&h=40&w=40"
     },
     {
       "id": 1464,
-      "name": "Youngstown St"
+      "name": "Youngstown St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2754.png&h=40&w=40"
     },
     {
       "id": 1465,
-      "name": "Cal Baptist"
+      "name": "Cal Baptist",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2856.png&h=40&w=40"
     },
     {
       "id": 1466,
-      "name": "North Alabama"
+      "name": "North Alabama",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2453.png&h=40&w=40"
     },
     {
       "id": 1467,
-      "name": "Merrimack"
+      "name": "Merrimack",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2771.png&h=40&w=40"
     },
     {
       "id": 1468,
-      "name": "Bellarmine"
+      "name": "Bellarmine",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/91.png&h=40&w=40"
     },
     {
       "id": 1469,
-      "name": "Utah Tech"
+      "name": "Utah Tech",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/3101.png&h=40&w=40"
     },
     {
       "id": 1470,
-      "name": "Tarleton St"
+      "name": "Tarleton St",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2627.png&h=40&w=40"
     },
     {
       "id": 1471,
-      "name": "UC San Diego"
+      "name": "UC San Diego",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/28.png&h=40&w=40"
     },
     {
       "id": 1472,
-      "name": "St Thomas MN"
+      "name": "St Thomas MN",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2900.png&h=40&w=40"
     },
     {
       "id": 1473,
-      "name": "Lindenwood"
+      "name": "Lindenwood",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2815.png&h=40&w=40"
     },
     {
       "id": 1474,
-      "name": "Queens NC"
+      "name": "Queens NC",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2511.png&h=40&w=40"
     },
     {
       "id": 1475,
-      "name": "Southern Indiana"
+      "name": "Southern Indiana",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/88.png&h=40&w=40"
     },
     {
       "id": 1476,
-      "name": "Stonehill"
+      "name": "Stonehill",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/284.png&h=40&w=40"
     },
     {
       "id": 1477,
-      "name": "East Texas A&M"
+      "name": "East Texas A&M",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2837.png&h=40&w=40"
     },
     {
       "id": 1478,
-      "name": "Le Moyne"
+      "name": "Le Moyne",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2330.png&h=40&w=40"
     },
     {
       "id": 1479,
-      "name": "Mercyhurst"
+      "name": "Mercyhurst",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2385.png&h=40&w=40"
     },
     {
       "id": 1480,
-      "name": "West Georgia"
+      "name": "West Georgia",
+      "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2698.png&h=40&w=40"
     },
     {
       "id": 1481,
-      "name": "New Haven"
+      "name": "New Haven",
+      "logoUrl": null
     }
   ],
   "teamIds": [

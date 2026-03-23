@@ -85,19 +85,25 @@ function sortSlots(slots) {
 }
 
 export function buildContext(meta) {
+  const teamById = new Map(meta.teams.map((team) => [team.id, team]));
   const teamNameById = new Map(meta.teams.map((team) => [team.id, team.name]));
   const seedToTeam = new Map(meta.seeds.map((row) => [row.seed, row.teamId]));
   const slotRows = new Map(meta.slots.map((row) => [row.slot, [row.strong, row.weak]]));
   const completedSlots = new Map(Object.entries(meta.resolvedSlots));
+  const scoringSlots = sortSlots(meta.slots)
+    .map((row) => row.slot)
+    .filter((slot) => roundFromSlot(slot) >= 1);
   return {
     gender: meta.gender,
     season: meta.season,
     allSlots: sortSlots(meta.slots).map((row) => row.slot),
+    scoringSlots,
+    teamById,
     teamNameById,
     seedToTeam,
     slotRows,
     completedSlots,
-    totalGames: meta.slots.length,
+    totalGames: scoringSlots.length,
   };
 }
 
@@ -107,7 +113,7 @@ function deterministicTeam(token, context, completedSlots) {
   return null;
 }
 
-function slotParticipantsIfKnown(slot, context, completedSlots) {
+export function slotParticipantsIfKnown(slot, context, completedSlots) {
   const pair = context.slotRows.get(slot);
   if (!pair) return null;
   const [strong, weak] = pair;
@@ -118,14 +124,14 @@ function slotParticipantsIfKnown(slot, context, completedSlots) {
 }
 
 function openSlotsWithKnownParticipants(context, completedSlots) {
-  return context.allSlots.filter((slot) => {
+  return context.scoringSlots.filter((slot) => {
     if (completedSlots.has(slot)) return false;
     return slotParticipantsIfKnown(slot, context, completedSlots) != null;
   });
 }
 
 function completedGameList(context, completedSlots) {
-  return context.allSlots
+  return context.scoringSlots
     .filter((slot) => completedSlots.has(slot))
     .map((slot) => {
       const participants = slotParticipantsIfKnown(slot, context, completedSlots);
@@ -277,6 +283,110 @@ function expectedRemainingEdge({
     total += prob * summary.edgeGivenWinner.get(teamId);
   }
   return total;
+}
+
+function solveEdgeExtrema({
+  token,
+  metric,
+  context,
+  completedSlots,
+  forcedSlots,
+  ourLookup,
+  benchmarkLookup,
+  cache,
+}) {
+  const forceKey = JSON.stringify([...forcedSlots.entries()].sort());
+  const cacheKey = `${token}|${forceKey}`;
+  if (cache.has(cacheKey)) return cache.get(cacheKey);
+
+  if (context.seedToTeam.has(token)) {
+    const teamId = context.seedToTeam.get(token);
+    const out = { best: new Map([[teamId, 0]]), worst: new Map([[teamId, 0]]) };
+    cache.set(cacheKey, out);
+    return out;
+  }
+
+  if (completedSlots.has(token)) {
+    const teamId = completedSlots.get(token);
+    const out = { best: new Map([[teamId, 0]]), worst: new Map([[teamId, 0]]) };
+    cache.set(cacheKey, out);
+    return out;
+  }
+
+  const [strong, weak] = context.slotRows.get(token);
+  const left = solveEdgeExtrema({
+    token: strong,
+    metric,
+    context,
+    completedSlots,
+    forcedSlots,
+    ourLookup,
+    benchmarkLookup,
+    cache,
+  });
+  const right = solveEdgeExtrema({
+    token: weak,
+    metric,
+    context,
+    completedSlots,
+    forcedSlots,
+    ourLookup,
+    benchmarkLookup,
+    cache,
+  });
+
+  const best = new Map();
+  const worst = new Map();
+  for (const [teamA, leftBest] of left.best.entries()) {
+    for (const [teamB, rightBest] of right.best.entries()) {
+      const baseBest = leftBest + rightBest;
+      const baseWorst = left.worst.get(teamA) + right.worst.get(teamB);
+
+      if (forcedSlots.has(token)) {
+        const forcedWinner = forcedSlots.get(token);
+        if (forcedWinner !== teamA && forcedWinner !== teamB) continue;
+        const edge = gameEdge(metric, teamA, teamB, forcedWinner, ourLookup, benchmarkLookup);
+        best.set(forcedWinner, Math.max(best.get(forcedWinner) ?? -Infinity, baseBest + edge));
+        worst.set(forcedWinner, Math.min(worst.get(forcedWinner) ?? Infinity, baseWorst + edge));
+        continue;
+      }
+
+      const edgeA = gameEdge(metric, teamA, teamB, teamA, ourLookup, benchmarkLookup);
+      const edgeB = gameEdge(metric, teamA, teamB, teamB, ourLookup, benchmarkLookup);
+
+      best.set(teamA, Math.max(best.get(teamA) ?? -Infinity, baseBest + edgeA));
+      worst.set(teamA, Math.min(worst.get(teamA) ?? Infinity, baseWorst + edgeA));
+      best.set(teamB, Math.max(best.get(teamB) ?? -Infinity, baseBest + edgeB));
+      worst.set(teamB, Math.min(worst.get(teamB) ?? Infinity, baseWorst + edgeB));
+    }
+  }
+
+  const out = { best, worst };
+  cache.set(cacheKey, out);
+  return out;
+}
+
+function remainingEdgeExtrema({
+  metric,
+  context,
+  ourLookup,
+  benchmarkLookup,
+  forcedSlots = new Map(),
+}) {
+  const summary = solveEdgeExtrema({
+    token: "R6CH",
+    metric,
+    context,
+    completedSlots: context.completedSlots,
+    forcedSlots,
+    ourLookup,
+    benchmarkLookup,
+    cache: new Map(),
+  });
+  return {
+    best: Math.max(...summary.best.values()),
+    worst: Math.min(...summary.worst.values()),
+  };
 }
 
 function expectedRemainingLoss({
@@ -496,6 +606,13 @@ export function buildAnalysis({
   });
 
   const openSlots = openSlotsWithKnownParticipants(context, context.completedSlots);
+  const overallExtrema = remainingEdgeExtrema({
+    metric,
+    context,
+    ourLookup,
+    benchmarkLookup,
+    forcedSlots: new Map(),
+  });
   const rows = openSlots.map((slot, idx) => {
     const [teamA, teamB] = slotParticipantsIfKnown(slot, context, context.completedSlots);
     const forcedA = new Map([[slot, teamA]]);
@@ -512,6 +629,20 @@ export function buildAnalysis({
       metric,
       context,
       forecastLookup,
+      ourLookup,
+      benchmarkLookup,
+      forcedSlots: forcedB,
+    });
+    const extremaA = remainingEdgeExtrema({
+      metric,
+      context,
+      ourLookup,
+      benchmarkLookup,
+      forcedSlots: forcedA,
+    });
+    const extremaB = remainingEdgeExtrema({
+      metric,
+      context,
       ourLookup,
       benchmarkLookup,
       forcedSlots: forcedB,
@@ -551,6 +682,10 @@ export function buildAnalysis({
       benchmarkProbTeamA: submissionProb(teamA, teamB, benchmarkLookup),
       expectedFinalEdgeIfTeamAWins: currentEdge + remainingEdgeA,
       expectedFinalEdgeIfTeamBWins: currentEdge + remainingEdgeB,
+      bestFinalEdgeIfTeamAWins: currentEdge + extremaA.best,
+      bestFinalEdgeIfTeamBWins: currentEdge + extremaB.best,
+      worstFinalEdgeIfTeamAWins: currentEdge + extremaA.worst,
+      worstFinalEdgeIfTeamBWins: currentEdge + extremaB.worst,
       beatProbIfTeamAWins: beatA,
       beatProbIfTeamBWins: beatB,
       cheerFor,
@@ -578,7 +713,16 @@ export function buildAnalysis({
     metric,
     completedCount,
     remainingCount,
+    totalGames: context.totalGames,
     currentEdge,
+    ourCurrentLossTotal: ourCurrentLoss,
+    benchmarkCurrentLossTotal: benchmarkCurrentLoss,
+    ourExpectedFinalLossTotal: ourCurrentLoss + ourRemainingLoss,
+    benchmarkExpectedFinalLossTotal: benchmarkCurrentLoss + benchmarkRemainingLoss,
+    expectedFinalEdgeTotal:
+      benchmarkCurrentLoss + benchmarkRemainingLoss - ourCurrentLoss - ourRemainingLoss,
+    bestPossibleFinalEdgeTotal: currentEdge + overallExtrema.best,
+    worstPossibleFinalEdgeTotal: currentEdge + overallExtrema.worst,
     ourCurrentAverage: completedCount ? ourCurrentLoss / completedCount : 0,
     benchmarkCurrentAverage: completedCount ? benchmarkCurrentLoss / completedCount : 0,
     ourExpectedFinalAverage: (ourCurrentLoss + ourRemainingLoss) / context.totalGames,
