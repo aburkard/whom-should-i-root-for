@@ -413,7 +413,7 @@ function renderTable(view) {
             <h2>Rooting Guide</h2>
           </div>
           <div class="metric-legend">
-          <div><strong>Brier Gain</strong>: expected boost to your final edge if this team wins instead of the other one.</div>
+          <div><strong>Brier Edge Gain</strong>: expected boost to your final benchmark-minus-you edge if this team wins instead of the other one.</div>
           <div><strong>Ceiling Swing</strong>: difference in best-case final edge between the two possible winners.</div>
           <div><strong>Expected Final Brier Edge</strong>: benchmark-minus-you Brier score if this team wins, averaged over the rest of the bracket.</div>
           </div>
@@ -423,7 +423,7 @@ function renderTable(view) {
           <thead>
             <tr>
               <th>${sortableHeader("Rooting Interest", "rootingInterest")}</th>
-              <th>${sortableHeader("Brier Gain", "displaySwing")}</th>
+              <th>${sortableHeader("Brier Edge Gain", "displaySwing")}</th>
               <th>${sortableHeader("Ceiling Swing", "upsideSwing")}</th>
               <th>${sortableHeader("Our Prob", "rootForProb")}</th>
               <th>${sortableHeader("Benchmark Prob", "benchmarkRootForProb")}</th>
