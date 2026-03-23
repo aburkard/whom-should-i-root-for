@@ -453,17 +453,26 @@ function updateManualControls(view = null) {
     Object.keys(state.manualResolved.men || {}).length +
     Object.keys(state.manualResolved.women || {}).length
   );
+  const helpText = "Click a team in the bracket to enter or change a result. Click the selected winner again to clear it.";
   els.manualSummary.textContent = manualCount
-    ? `Click a team in the bracket to enter or change a result. ${manualCount} manual ${manualCount === 1 ? "result" : "results"} entered in this browser.`
-    : "Click a team in the bracket to enter or change a result. No manual results entered in this browser.";
+    ? `${helpText} ${manualCount} manual ${manualCount === 1 ? "result" : "results"} entered in this browser.`
+    : `${helpText} No manual results entered in this browser.`;
   els.undoManual.disabled = state.manualHistory.length === 0;
   els.clearManual.disabled = manualCount === 0;
 }
 
 async function setManualWinner(gender, slot, teamId) {
   const current = Number(state.manualResolved[gender]?.[slot] ?? 0);
-  if (current === teamId) return;
   pushManualHistorySnapshot();
+  if (current === teamId) {
+    const next = { ...state.manualResolved[gender] };
+    delete next[slot];
+    state.manualResolved[gender] = next;
+    persistState();
+    await recompute();
+    updateStatus(`Cleared manual ${gender} result for ${slot}.`);
+    return;
+  }
   state.manualResolved[gender] = {
     ...state.manualResolved[gender],
     [slot]: teamId,
