@@ -18,10 +18,10 @@
         <div class="eyebrow">2026 Tournament Rooting Guide</div>
         <h1>Whom Should I Root For?</h1>
         <p>
-          Upload your submission and compare it with the expert median to see
-          which remaining results help your Kaggle score most. The default view
-          uses the combined 126 men’s and women’s main-bracket games and
-          updates from the current live bracket state.
+          Upload your submission and compare it with a benchmark to see which
+          remaining results help your Kaggle score most. The default view uses
+          the combined 126 men’s and women’s main-bracket games and updates
+          from the current live bracket state.
         </p>
       </section>
 
@@ -63,7 +63,15 @@
             <input id="our-upload" type="file" accept=".csv,text/csv" />
           </label>
           <label>
-            Benchmark submission CSV
+            Benchmark
+            <select id="benchmark-source">
+              <option value="median">Experts median</option>
+              <option value="andrew">Andrew’s submission</option>
+              <option value="upload">Upload file</option>
+            </select>
+          </label>
+          <label id="benchmark-upload-wrap" aria-hidden="true">
+            Benchmark CSV
             <input id="benchmark-upload" type="file" accept=".csv,text/csv" />
           </label>
           <label>

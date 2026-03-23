@@ -20,6 +20,7 @@ const state = {
     our: null,
     benchmark: null,
   },
+  benchmarkSource: "median",
   tableSort: {
     key: "displaySwing",
     dir: "desc",
@@ -572,6 +573,10 @@ async function getDefaultCsv(kind, gender) {
   return state.defaultCsv[key];
 }
 
+function benchmarkDefaultKind() {
+  return state.benchmarkSource === "andrew" ? "ourDefault" : "benchmarkDefault";
+}
+
 async function recompute() {
   try {
     updateStatus("Recomputing…");
@@ -583,9 +588,15 @@ async function recompute() {
     const benchmarkUploadText = state.uploads.benchmark;
 
     const menOurText = ourUploadText || await getDefaultCsv("ourDefault", "men");
-    const menBenchmarkText = benchmarkUploadText || await getDefaultCsv("benchmarkDefault", "men");
+    const menBenchmarkText =
+      state.benchmarkSource === "upload"
+        ? benchmarkUploadText || await getDefaultCsv("benchmarkDefault", "men")
+        : await getDefaultCsv(benchmarkDefaultKind(), "men");
     const womenOurText = ourUploadText || await getDefaultCsv("ourDefault", "women");
-    const womenBenchmarkText = benchmarkUploadText || await getDefaultCsv("benchmarkDefault", "women");
+    const womenBenchmarkText =
+      state.benchmarkSource === "upload"
+        ? benchmarkUploadText || await getDefaultCsv("benchmarkDefault", "women")
+        : await getDefaultCsv(benchmarkDefaultKind(), "women");
 
     const menOurLookup = buildSubmissionLookup(menOurText, menMeta.season, new Set(menMeta.teamIds));
     const menBenchmarkLookup = buildSubmissionLookup(
@@ -731,11 +742,25 @@ function bindEvents() {
     await recompute();
   });
 
+  els.benchmarkSource.addEventListener("change", async (event) => {
+    state.benchmarkSource = event.target.value;
+    els.benchmarkUploadWrap.classList.toggle("is-hidden", state.benchmarkSource !== "upload");
+    els.benchmarkUploadWrap.setAttribute(
+      "aria-hidden",
+      state.benchmarkSource !== "upload" ? "true" : "false",
+    );
+    await recompute();
+  });
+
   els.reset.addEventListener("click", async () => {
     state.uploads.our = null;
     state.uploads.benchmark = null;
+    state.benchmarkSource = "median";
     els.ourUpload.value = "";
     els.benchmarkUpload.value = "";
+    els.benchmarkSource.value = "median";
+    els.benchmarkUploadWrap.classList.add("is-hidden");
+    els.benchmarkUploadWrap.setAttribute("aria-hidden", "true");
     await recompute();
   });
 
@@ -762,6 +787,8 @@ async function init() {
     status: document.querySelector("#status"),
     metric: document.querySelector("#metric"),
     forecastMode: document.querySelector("#forecast-mode"),
+    benchmarkSource: document.querySelector("#benchmark-source"),
+    benchmarkUploadWrap: document.querySelector("#benchmark-upload-wrap"),
     weightWrap: document.querySelector("#weight-wrap"),
     weight: document.querySelector("#weight"),
     weightValue: document.querySelector("#weight-value"),
@@ -769,6 +796,13 @@ async function init() {
     benchmarkUpload: document.querySelector("#benchmark-upload"),
     reset: document.querySelector("#reset-defaults"),
   });
+
+  els.benchmarkSource.value = state.benchmarkSource;
+  els.benchmarkUploadWrap.classList.toggle("is-hidden", state.benchmarkSource !== "upload");
+  els.benchmarkUploadWrap.setAttribute(
+    "aria-hidden",
+    state.benchmarkSource !== "upload" ? "true" : "false",
+  );
 
   state.manifest = await fetchJson("data/manifest.json");
   bindEvents();

@@ -131,6 +131,11 @@ select {
   color: var(--muted);
 }
 
+.upload-grid label.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
 input[type="file"]::file-selector-button,
 button.secondary {
   background: var(--accent-soft);
