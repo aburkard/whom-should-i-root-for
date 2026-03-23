@@ -26,9 +26,14 @@ const state = {
     dir: "desc",
   },
   currentView: null,
+  restoredFromStorage: false,
 };
 
 const els = {};
+const STORAGE_KEYS = {
+  ourUpload: "wsirf:our-upload",
+  benchmarkSource: "wsirf:benchmark-source",
+};
 
 const REGION_CONFIG = {
   men: {
@@ -54,15 +59,49 @@ const ROUND_TITLES = {
 };
 
 async function fetchText(path) {
-  const response = await fetch(path);
+  const response = await fetch(path, { cache: "no-store" });
   if (!response.ok) throw new Error(`Failed to load ${path}`);
   return response.text();
 }
 
 async function fetchJson(path) {
-  const response = await fetch(path);
+  const response = await fetch(path, { cache: "no-store" });
   if (!response.ok) throw new Error(`Failed to load ${path}`);
   return response.json();
+}
+
+function restorePersistedState() {
+  try {
+    const storedUpload = localStorage.getItem(STORAGE_KEYS.ourUpload);
+    const storedBenchmarkSource = localStorage.getItem(STORAGE_KEYS.benchmarkSource);
+    if (storedUpload) {
+      state.uploads.our = storedUpload;
+      state.restoredFromStorage = true;
+    }
+    if (storedBenchmarkSource && storedBenchmarkSource !== "upload") {
+      state.benchmarkSource = storedBenchmarkSource;
+    }
+  } catch (error) {
+    console.warn("Failed to restore state", error);
+  }
+}
+
+function persistState() {
+  try {
+    if (state.uploads.our) {
+      localStorage.setItem(STORAGE_KEYS.ourUpload, state.uploads.our);
+    } else {
+      localStorage.removeItem(STORAGE_KEYS.ourUpload);
+    }
+
+    if (state.benchmarkSource && state.benchmarkSource !== "upload") {
+      localStorage.setItem(STORAGE_KEYS.benchmarkSource, state.benchmarkSource);
+    } else {
+      localStorage.removeItem(STORAGE_KEYS.benchmarkSource);
+    }
+  } catch (error) {
+    console.warn("Failed to persist state", error);
+  }
 }
 
 function fmtSigned(value, digits = 4) {
@@ -72,6 +111,10 @@ function fmtSigned(value, digits = 4) {
 
 function fmtPct(value, digits = 1) {
   return `${(value * 100).toFixed(digits)}%`;
+}
+
+function scoreDigits(metric) {
+  return metric === "brier" ? 5 : 4;
 }
 
 function logoImg(context, teamId, alt, className = "team-logo") {
@@ -199,6 +242,7 @@ function enrichRowsForScope(rows, ownAnalysis, otherAnalysis, totalGames, gender
 }
 
 function renderSummary(analysis) {
+  const digits = scoreDigits(state.metric);
   els.summary.innerHTML = `
     <div class="card">
       <div class="eyebrow">Games Scored So Far</div>
@@ -207,13 +251,13 @@ function renderSummary(analysis) {
     </div>
     <div class="card">
       <div class="eyebrow">Your ${metricNoun(state.metric)} So Far</div>
-      <div class="big">${analysis.ourCurrentAverage.toFixed(4)}</div>
-      <div class="muted">Benchmark: ${analysis.benchmarkCurrentAverage.toFixed(4)}</div>
+      <div class="big">${analysis.ourCurrentAverage.toFixed(digits)}</div>
+      <div class="muted">Benchmark: ${analysis.benchmarkCurrentAverage.toFixed(digits)}</div>
     </div>
     <div class="card">
       <div class="eyebrow">Projected Final ${metricNoun(state.metric)}</div>
-      <div class="big">${analysis.ourExpectedFinalAverage.toFixed(4)}</div>
-      <div class="muted">Benchmark: ${analysis.benchmarkExpectedFinalAverage.toFixed(4)}</div>
+      <div class="big">${analysis.ourExpectedFinalAverage.toFixed(digits)}</div>
+      <div class="muted">Benchmark: ${analysis.benchmarkExpectedFinalAverage.toFixed(digits)}</div>
     </div>
     <div class="card">
       <div class="eyebrow">Projected Final Edge</div>
@@ -756,6 +800,7 @@ function bindEvents() {
   els.ourUpload.addEventListener("change", async (event) => {
     const file = event.target.files[0];
     state.uploads.our = file ? await file.text() : null;
+    persistState();
     await recompute();
   });
 
@@ -772,6 +817,7 @@ function bindEvents() {
       "aria-hidden",
       state.benchmarkSource !== "upload" ? "true" : "false",
     );
+    persistState();
     await recompute();
   });
 
@@ -784,6 +830,7 @@ function bindEvents() {
     els.benchmarkSource.value = "median";
     els.benchmarkUploadWrap.classList.add("is-hidden");
     els.benchmarkUploadWrap.setAttribute("aria-hidden", "true");
+    persistState();
     await recompute();
   });
 
@@ -803,6 +850,8 @@ function bindEvents() {
 }
 
 async function init() {
+  restorePersistedState();
+
   Object.assign(els, {
     summary: document.querySelector("#summary"),
     bracketWrap: document.querySelector("#bracket-wrap"),
@@ -830,6 +879,9 @@ async function init() {
   state.manifest = await fetchJson("data/manifest.json");
   bindEvents();
   await recompute();
+  if (state.restoredFromStorage && state.uploads.our) {
+    updateStatus("Using saved submission from this browser.");
+  }
 }
 
 init();
