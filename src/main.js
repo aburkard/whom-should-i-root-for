@@ -84,6 +84,10 @@ function metricLabel(metric) {
   return metric === "brier" ? "Brier" : "Log Loss";
 }
 
+function metricNoun(metric) {
+  return metric === "brier" ? "Brier score" : "log loss";
+}
+
 const SORT_CONFIG = {
   rootingInterest: { defaultDir: "asc" },
   displaySwing: { defaultDir: "desc" },
@@ -202,19 +206,19 @@ function renderSummary(analysis) {
       <div class="muted">${analysis.remainingCount} remaining of ${analysis.totalGames}</div>
     </div>
     <div class="card">
-      <div class="eyebrow">Your ${metricLabel(state.metric)} So Far</div>
+      <div class="eyebrow">Your ${metricNoun(state.metric)} So Far</div>
       <div class="big">${analysis.ourCurrentAverage.toFixed(4)}</div>
-      <div class="muted">Expert: ${analysis.benchmarkCurrentAverage.toFixed(4)}</div>
+      <div class="muted">Benchmark: ${analysis.benchmarkCurrentAverage.toFixed(4)}</div>
     </div>
     <div class="card">
-      <div class="eyebrow">Projected Final ${metricLabel(state.metric)}</div>
+      <div class="eyebrow">Projected Final ${metricNoun(state.metric)}</div>
       <div class="big">${analysis.ourExpectedFinalAverage.toFixed(4)}</div>
-      <div class="muted">Expert: ${analysis.benchmarkExpectedFinalAverage.toFixed(4)}</div>
+      <div class="muted">Benchmark: ${analysis.benchmarkExpectedFinalAverage.toFixed(4)}</div>
     </div>
     <div class="card">
       <div class="eyebrow">Projected Final Edge</div>
       <div class="big">${fmtSigned(analysis.expectedFinalEdgeAverage)}</div>
-      <div class="muted">Expert ${metricLabel(state.metric)} minus yours. Positive is good.</div>
+      <div class="muted">Benchmark ${metricNoun(state.metric)} minus yours. Positive is good.</div>
     </div>
   `;
 }
@@ -270,7 +274,7 @@ function renderTable(view) {
           <div class="metric-legend">
           <div><strong>Brier Gain</strong>: expected boost to your final edge if this team wins instead of the other one.</div>
           <div><strong>Ceiling Swing</strong>: difference in best-case final edge between the two possible winners.</div>
-          <div><strong>Expected Final Brier Edge</strong>: expert-minus-you Brier if this team wins, averaged over the rest of the bracket.</div>
+          <div><strong>Expected Final Brier Edge</strong>: benchmark-minus-you Brier score if this team wins, averaged over the rest of the bracket.</div>
           </div>
         </div>
       <div class="table-scroll">
@@ -281,7 +285,7 @@ function renderTable(view) {
               <th>${sortableHeader("Brier Gain", "displaySwing")}</th>
               <th>${sortableHeader("Ceiling Swing", "upsideSwing")}</th>
               <th>${sortableHeader("Our Prob", "rootForProb")}</th>
-              <th>${sortableHeader("Expert Prob", "benchmarkRootForProb")}</th>
+              <th>${sortableHeader("Benchmark Prob", "benchmarkRootForProb")}</th>
               <th>${sortableHeader("Expected Final Brier Edge", "finalGapIfRootForWins")}</th>
             </tr>
           </thead>

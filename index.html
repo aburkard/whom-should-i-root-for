@@ -21,7 +21,7 @@
             <h1>Whom Should I Root For?</h1>
             <p>
               Upload a submission, compare it with a benchmark, and see which
-              remaining results move your Kaggle Brier the most.
+              remaining results move your Brier score the most.
             </p>
           </div>
           <aside class="hero-board" aria-label="Competition summary">
@@ -31,7 +31,7 @@
             </div>
             <div class="board-row">
               <span>Metric</span>
-              <strong>Brier</strong>
+              <strong>Brier score</strong>
             </div>
             <div class="board-row">
               <span>State</span>
@@ -62,7 +62,7 @@
           <label>
             Metric
             <select id="metric">
-              <option value="brier">Brier</option>
+              <option value="brier">Brier score</option>
               <option value="logloss">Log Loss</option>
             </select>
           </label>
@@ -72,7 +72,7 @@
             <select id="forecast-mode">
               <option value="blend">50/50 blend</option>
               <option value="ours">Our submission</option>
-              <option value="benchmark">Expert benchmark</option>
+              <option value="benchmark">Benchmark</option>
             </select>
           </label>
 
