@@ -292,6 +292,16 @@ function renderTable(view) {
   `;
 }
 
+function renderAwaitingSubmission() {
+  els.summary.innerHTML = "";
+  els.bracketWrap.innerHTML = "";
+  els.tableWrap.innerHTML = `
+    <div class="list-card table-card">
+      <div class="empty">Upload your submission CSV to generate the rooting guide.</div>
+    </div>
+  `;
+}
+
 function displayToken(token, context) {
   if (context.seedToTeam.has(token)) {
     return context.teamNameById.get(context.seedToTeam.get(token));
@@ -413,12 +423,12 @@ function renderBracket(analysis, context) {
 
   const regionMarkup = Object.entries(regions)
     .map(([prefix, label]) => {
-      const rounds = [];
-      for (let round = minRound; round <= 4; round += 1) {
-        const slots = orderedRegionSlots(prefix, round, context);
-        if (!slots.length) continue;
-        rounds.push(`
-          <div class="round-column">
+        const rounds = [];
+        for (let round = minRound; round <= 4; round += 1) {
+          const slots = orderedRegionSlots(prefix, round, context);
+          if (!slots.length) continue;
+          rounds.push(`
+          <div class="round-column round-${round}">
             <div class="round-title">${ROUND_TITLES[round] || `Round ${round}`}</div>
             <div class="round-stack">
               ${slots.map((slot) => renderGameCard(slot, context, rowBySlot)).join("")}
@@ -444,7 +454,7 @@ function renderBracket(analysis, context) {
             const slots = orderedFinalSlots(round, context);
             if (!slots.length) return "";
             return `
-              <div class="round-column">
+              <div class="round-column round-${round}">
                 <div class="round-title">${ROUND_TITLES[round]}</div>
                 <div class="round-stack">
                   ${slots.map((slot) => renderGameCard(slot, context, rowBySlot)).join("")}
@@ -490,7 +500,7 @@ function renderBracketPanel(title, analysis, context) {
         const slots = orderedRegionSlots(prefix, round, context);
         if (!slots.length) continue;
         rounds.push(`
-          <div class="round-column">
+          <div class="round-column round-${round}">
             <div class="round-title">${ROUND_TITLES[round] || `Round ${round}`}</div>
             <div class="round-stack">
               ${slots.map((slot) => renderGameCard(slot, context, rowBySlot)).join("")}
@@ -523,16 +533,16 @@ function renderBracketPanel(title, analysis, context) {
             <div class="region-title">Final Four</div>
             <div class="region-grid">
               ${[5, 6]
-                .map((round) => {
-                  const slots = orderedFinalSlots(round, context);
-                  if (!slots.length) return "";
-                  return `
-                    <div class="round-column">
-                      <div class="round-title">${ROUND_TITLES[round]}</div>
-                      <div class="round-stack">
-                        ${slots.map((slot) => renderGameCard(slot, context, rowBySlot)).join("")}
-                      </div>
-                    </div>
+          .map((round) => {
+            const slots = orderedFinalSlots(round, context);
+            if (!slots.length) return "";
+            return `
+              <div class="round-column round-${round}">
+                <div class="round-title">${ROUND_TITLES[round]}</div>
+                <div class="round-stack">
+                  ${slots.map((slot) => renderGameCard(slot, context, rowBySlot)).join("")}
+                </div>
+              </div>
                   `;
                 })
                 .join("")}
@@ -581,20 +591,27 @@ function benchmarkDefaultKind() {
 
 async function recompute() {
   try {
+    const ourUploadText = state.uploads.our;
+    if (!ourUploadText) {
+      state.currentView = null;
+      renderAwaitingSubmission();
+      updateStatus("Upload your submission CSV to begin.");
+      return;
+    }
+
     updateStatus("Recomputing…");
     const menMeta = await getMeta("men");
     const womenMeta = await getMeta("women");
     const menContext = buildContext(menMeta);
     const womenContext = buildContext(womenMeta);
-    const ourUploadText = state.uploads.our;
     const benchmarkUploadText = state.uploads.benchmark;
 
-    const menOurText = ourUploadText || await getDefaultCsv("ourDefault", "men");
+    const menOurText = ourUploadText;
     const menBenchmarkText =
       state.benchmarkSource === "upload"
         ? benchmarkUploadText || await getDefaultCsv("benchmarkDefault", "men")
         : await getDefaultCsv(benchmarkDefaultKind(), "men");
-    const womenOurText = ourUploadText || await getDefaultCsv("ourDefault", "women");
+    const womenOurText = ourUploadText;
     const womenBenchmarkText =
       state.benchmarkSource === "upload"
         ? benchmarkUploadText || await getDefaultCsv("benchmarkDefault", "women")
